@@ -1,0 +1,67 @@
+@charset "utf-8";
+.page { width: 100vw; height: 100vh; position: relative;}
+
+.main_tit { position: absolute; width: 400px; height: 100px; top: 40vh; left: 50vw; transform: translate(-50%, -50%); background-image:url(../src/logo_white.png); z-index: 1;}
+
+#vs { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; overflow: hidden;}
+#vdo { height: 200%; -webkit-filter: blur(3px); -moz-filter: blur(3px); -o-filter: blur(3px); -ms-filter: blur(3px);}
+
+#src_form { position: absolute; display: flex; width: 550px; height: 50px; top: 50vh; left: 50vw; transform: translate(-50%, 0%); justify-content: space-around; align-items: center;}
+
+#src_bar { position: absolute; width: 550px; height: 50px; top: 0; left: 0; border-radius: 10px; text-indent: 1rem; box-shadow: 0px 0px 10px #333; animation: bcimgAni 4s linear infinite; transition: 0.6s; transition: 0.6s;}
+#src_bar:focus { background-color: rgba(255, 255, 255, 0.8); animation: none;}
+
+#src_btn { position: absolute; width: 50px; height: 50px; top: 0; right: 0; border-radius: 100%; background-image: url(../src/icon/search_black.png); background-size: 25px; background-position: center; background-repeat: no-repeat; opacity: 0; visibility: hidden; transition: 0.6s 0.2s; cursor: pointer;}
+#src_bar:focus ~ #src_btn { opacity: 1; visibility: visible;}
+@keyframes bcimgAni {
+    0% { background-color: rgba(255, 255, 255, 0.3);}
+    50% { background-color: rgba(255, 255, 255, 0.8);}
+    100% { background-color: rgba(255, 255, 255, 0.3);}
+}
+
+.down_arrow { position: absolute; width: 50px; height: 50px; bottom: 5rem; left: 50vw;  margin-left: -25px; background-image: url(../src/icon/scroll_down_white.png); background-repeat: no-repeat; background-size: cover; background-repeat: no-repeat; background-position: center; animation: jellyAni 1s infinite; }
+/* transform(-50%)와 margin-left: -반값의 차이가 뭔가요? */
+@keyframes jellyAni {
+    from,to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+    from,to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+}
+.down_txt {position: absolute; width: 100px; height: 2rem; bottom: 2rem; left: 50vw; transform: translate(-50%, 0); text-align: center; color: white; font-weight: bold;}
+
+#page2 { background: pink;}
+.page_con_box { position: absolute; width: 1440px; height: 80vh; bottom: 0; left: 50%; margin-left: -720px; background-color: white; box-shadow: 0 0 10px #333;}
+.page_con_tit { height: 15vh; line-height: 15vh; font-size: 4rem; color: #333; text-shadow: 0 0 5px #ccc; text-align: center; }
+.page_item_box { position: relative; width: 1200px; height: 60vh; padding: 0; margin:0 auto; box-sizing: border-box;}
+.page_item_box a{ position: relative; float: left; width: calc(1200px / 3 ); height: 30vh; background-size: cover; background-position: center; background-repeat: no-repeat; overflow: hidden; transition: 0.6s; color: white;}
+.page_item_box .item_tit { position: absolute; text-align: center; width: 100%; height: 5vh; bottom: 0; font-size: 1.6rem; text-align: 5vh; font-weight: bold;}
+.page_item_box .item1 a { height: 60vh; background-image: url(../src/index/page_2_1.png);}
+.page_item_box .item2 a { background-image: url(../src/index/page_2_2.png);}
+.page_item_box .item3 a { background-image: url(../src/index/page_2_3.png);}
+.page_item_box .item4 a { background-image: url(../src/index/page_2_4.png);}
+.page_item_box .item5 a { background-image: url(../src/index/page_2_5.png);}
+
+.page_item_box a:hover { transform: scale(1.1); z-index: 1; box-shadow: 0 0 10px skyblue;}
+
+#page3 { background: skyblue;}
+#page3 .page_con_box { top: 0vh; height: 60vh; z-index: 0}
+.sl_fr1 { position: relative; width: 80%; height: 40vh; margin: 0 auto; overflow: hidden;}
+.sl_box1 { width: 300%; height: 100%;}
+.sl_box1 li { float: left; width: 33.33333%; height: 100%;}
+.sl_box1 .left_box { float: left; position: relative; width: 50%; height: 100%; background-image: url(../src/index/tv_fr.png); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.sl_box1 .right_box { float: left; position: relative; width: 50%; height: 100%;}
+.sl_box1 .left_box img { position: absolute; width: 500px; height: 300px; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.sl_box1 .sl_tit1, .sl_box1 .sl_com1 { padding-left: 2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.sl_box1 .right_box .sl_tit1 { height: 6rem; line-height: 6rem; font-size: 1.8rem;}
+.sl_box1 .right_box .sl_com1 { height: 10rem;}
+.sl_box1 .right_box .go_btn { position: absolute; display: block; width: 150px; height: 50px; top: 16rem; left: 50%; margin-left: -75px; border: 2px solid #333; border-radius: 10px; background-color: #E5DFEB; font-size: 1.2rem; text-align: center; line-height: 50px; font-weight: bold; color: #333;}
+.sl_btn_box1 { position: absolute; width: 34%; height: 10px; top: calc(16rem + 120px); left: 55%;}
+.sl_btn_box1 button { position: absolute; display: block; top: 0; float: left; width: 30%; height: 10px; margin-right: 3.33333%; background-color: #A098A5; cursor: pointer;}
+.sl_btn_box1 .btn1 { left: 0;}
+.sl_btn_box1 .btn2 { left: 33.33333%;}
+.sl_btn_box1 .btn3 { left: 66.66666%;}
+.sl_btn_box1 .on { background-color: #6C0D0F;}

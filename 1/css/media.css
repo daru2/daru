@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@media screen and ( max-width: 700px ){
+    html, body { font-size: 10px;}
+    a { font-size: 1rem;}
+    #left_menu, #right_menu { padding-right: 1rem; padding-left: 1rem; width: 15rem;}
+    #menu_box { width: 60vw;}
+    #src_form, #src_bar { width: 90vw;}
+    
+
+
+}
+
+@media screen and ( min-width: 701px ) and ( max-width: 1200px){
+    html, body { font-size: 12px;}
+    a { font-size: 1rem;}
+    #left_menu, #right_menu { padding-right: 2rem; padding-left: 2rem;}
+    #menu_box { width: 40vw;}
+
+
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 모바일웹 스크롤에 따라 주소창 숨기기/드러내기 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script>
+    // 자바스크립트로 모바일 웹 주소창 숨기기 (구형 모바일을 위한 것)
+    window.addEventListener('load', function() {
+        // body의 height를 살짝 늘리는 코드
+    document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+        // scroll를 제어 하는 코드
+    setTimeout(function(){ window.scrollTo(0, 1); }, 100); 
+    });
+    </script>
+
+    <!-- 검색엔진 최적화 -->
+    <meta name="author" content="KIMHYUNWOO">
+    <meta name="keywords" content="검색어">
+    <meta name="description" content="설명">
+
+    <!-- 오픈그래프 -->
+    <meta property="fb:app_id" content="페이스북의 앱아이디">
+    <meta property="og:site_name" content="사이트나 앱이름">
+    <meta property="og:title" content="사이트 제목">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="도메인네임을 비롯한 사이트 주소">
+    <meta property="og:image" content="">
+    <meta property="twitter:card" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <!-- 파비콘 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./src/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./src/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS링크 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>종로구 문화관광</title>
+    <!-- 폰트 cdn -->
+    <!-- 구글폰트 : https://fonts.google.com/?subset=korean&selection.family=Noto+Sans+KR -->
+    <!-- 눈누 : https://noonnu.cc/-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet"> <!-- font-family: 'Noto Sans KR', sans-serif; -->
+
+    <!-- XE icon cdn -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 아이콘셋 : https://xpressengine.github.io/XEIcon/library-2.3.3.html -->
+    <!-- 형식 : <span class="xi-bars"></span>-->
+
+    <style>
+
+
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+    
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <button id="menu_btn">
+        <div class="relative">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </button>
+    <div id="menu_box">
+        <nav id="gnb">
+            <ul>
+                <li><a href="sub1.php">테마여행</a></li>
+                <li><a href="sub2.php">명소</a></li>
+                <li><a href="sub3.php">문화&역사</a></li>
+                <li><a href="sub4.php">관광안내</a></li>
+            </ul>
+        </nav> 
+        <nav id="bnb">
+            <ul>
+                <li><a href="">위치</a></li>
+                <li><a href="">연락처</a></li>
+            </ul>
+        </nav>
+        <button id="menu_cls">
+            <div class="relative">
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+    </div>
+    <header id="hd">
+        <nav id="left_menu">
+            <ul>
+                <li><a href="#">KO</a></li>
+                <li><a href="#">EN</a></li>
+                <li><a href="#">JP</a></li>
+                <li><a href="#">CN</a></li>
+            </ul>
+        </nav>
+        <nav id="right_menu">
+            <ul>
+                <li><a href="index.php">종로구청</a></li>
+                <li><a href="login.php">로그인</a></li>
+                <li><a href="join.php">회원가입</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="ct">
+        <div class="page" id="page1">
+            <div class="main_tit"></div>
+            <figure id="vs">
+                <video src="./src/index/back_video.mp4" id="vdo" autoplay muted loop></video>
+            </figure>
+            <form action="" id="src_form">
+                <div class="relative">
+                    <input type="text" name="search" id="src_bar">
+                    <input type="submit" value="" id="src_btn">
+                </div>
+            </form>
+            <div class="down_arrow"></div>
+            <div class="down_txt">SCROLL DOWN</div>
+        </div>
+        <div class="page" id="page2">
+            <div class="page_con_box">
+                <h2 class="page_con_tit">Visit Jongro</h2>
+                <ul class="page_item_box">
+                    <li class="item1">
+                        <a href="">
+                            <p class="item_tit">명소</p>
+                        </a>
+                    </li>
+                    <li class="item2">
+                        <a href="">
+                            <p class="item_tit">테마여행</p>
+                        </a>
+                    </li>
+                    <li class="item3">
+                        <a href="">
+                            <p class="item_tit">행사</p>
+                        </a>
+                    </li>
+                    <li class="item4">
+                        <a href="">
+                            <p class="item_tit">공연</p>
+                        </a>
+                    </li>
+                    <li class="item5">
+                        <a href="">
+                            <p class="item_tit">쇼핑</p>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="page" id="page3">
+            <div class="page_con_box">
+            <h2 class="page_con_tit">Jongro TV</h2>
+            <div class="sl_fr1">
+                <ul class="sl_box1">
+                    <li class="item1">
+                        <div class="left_box"><img src="./src/index/page_3_thum1.png" alt=""></div>
+                        <div class="right_box">
+                            <h2 class="sl_tit1">종로구를 알아보는 새로운 방법!</h2>
+                            <p class="sl_com1">#종로구 소식 #종로 뉴스 #다양한 정보 #SNS기자단 #종로TV</p>
+                            <a href="" class="go_btn">보러가기</a>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <div class="left_box"><img src="./src/index/page_3_thum2.png" alt=""></div>
+                        <div class="right_box">
+                            <h2 class="sl_tit1">[월간 종로사랑 1월호] 2020년 1월 종로 소식</h2>
+                            <p class="sl_com1">1월 종로 소식을 한눈에!(feat. 주민리포터 김미라 이호현)</p>
+                            <a href="" class="go_btn">보러가기</a>
+                        </div>
+                    </li>
+                    <li class="item3">
+                        <div class="left_box"><img src="./src/index/page_3_thum3.png" alt=""></div>
+                        <div class="right_box">
+                            <h2 class="sl_tit1">[종로 人스타]옥인동 소설가 심윤경</h2>
+                            <p class="sl_com1">#종로의 인물을 만나다 #종로 인스타 #소설가 #심윤경</p>
+                            <a href="" class="go_btn">보러가기</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="sl_btn_box1">
+                    <div class="btn_box1">
+                        <button class="btn1 on"></button>
+                        <button class="btn2"></button>
+                        <button class="btn3"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer id="ft">
+        
+    </footer>
+</div>
+
+</body>
+</html>
