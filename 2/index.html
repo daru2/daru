@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>환인제약</title>
+    <!-- 메타태그 (웹 접근성) -->
+
+    <!-- 웹폰트 연결 -->
+    <!-- 구글폰트 : https://fonts.google.com/?subset=korean&selection.family=Noto+Sans+KR -->
+    <!-- 눈누 : https://noonnu.cc/-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet"> <!-- font-family: 'Noto Sans KR', sans-serif; -->
+
+    <!-- XE icon폰트 링크 -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 아이콘셋 : https://xpressengine.github.io/XEIcon/library-2.3.3.html -->
+    <!-- 형식 : <span class="xi-bars"></span>-->
+
+    <!-- css 스타일시트 링크 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="top">
+                <a href="index.html" class="logo"></a>
+                <div class="blank_box"></div>
+                <div class="lng_box">
+                    <label for="" class="lng_kr">KR</label>
+                    <label for="" class="lng_en">EN</label>
+                </div>
+                <div class="btn_box">
+                    <label for="" class="search_btn">
+                        <span class="xi-search"></span>
+                    </label>
+                    <label for="" class="gnb_btn">
+                        <span class="xi-list"></span>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <div class="gnb_fr">
+            <nav id="gnb">
+                <ul class="menu">
+                    <li><a href="sub1.html" class="dp1">Coperation</a></li>
+                    <li><a href="sub2.html" class="dp1">R&D</a></li>
+                    <li><a href="sub3.html" class="dp1">Product</a></li>
+                    <li><a href="sub4.html" class="dp1">Customer</a></li>
+                    <li><a href="sub5.html" class="dp1">Comunity</a></li>
+                    <li>
+                        <ul class="sign desk">
+                            <li><a href="signin.html">SIGN IN</a></li>
+                            <li><a href="signup.html">SIGN UP</a></li>
+                        </ul>
+                        <ul class="sign mo">
+                            <li><button class="signin_btn">SIGN IN</button></li>
+                            <li><button class="signup_btn">SIGN UP</button></li>
+                        </ul> 
+                    </li>
+                </ul>
+                <label for="" class="gnb_cls">
+                    <span class="xi-close"></span>
+                </label>
+            </nav>
+            <div class="signin_frm_fr mo">
+                <form action="" class="signin_frm">
+                    <div class="signin_emblem"></div>
+                    <input type="text" placeholder="아이디를 입력하세요." name="m_id" class="" id="signin_id">
+                    <input type="password" placeholder="비밀번호를 입력하세요." name="m_pw" class="" id="signin_pw">
+                    <input type="submit" value="로그인" id="signin_submit">
+                    <p>회원이 아니신가요?</p>
+                    <a class="signup_btn" href="javascript:;">SIGN UP</a>
+                    <p>아이디 / 비밀번호를 잊으셨나요?</p>
+                    <button>회원 찾기</button>
+                    <label for="" class="signin_cls">
+                        <span class="xi-close"></span>
+                    </label>
+                </form>
+            </div>
+            <div class="signup_frm_fr mo">
+                <form action="" class="signup_frm">
+                    <h2 class="signup_tit">회원가입</h2>
+                    <input type="text" placeholder="아이디를 입력하세요." id="id" name="id" class="indata">
+                    <input type="button" id="mem_btn" value="중복확인" class="btn" onclick="checkid()">
+                    <input type="password" placeholder="비밀번호를 입력하세요." id="pwd" name="pwd" class="indata">
+                    <input type="password" placeholder="비밀번호를 한 번 더 입력하세요." id="pwd2" name="pwd2" class="indata">
+                    <input type="text" placeholder="이름" id="name" name="name" class="indata">
+                    <div class="gender_box">
+                        <label for="m_gen1">남성</label>
+                        <input type="radio" name="gen" class="gender indata" id="m_gen1" checked>
+                        <label for="m_gen2">여성</label>
+                        <input type="radio" name="gen" class="gender indata" id="m_gen2">
+                    </div>
+                    <input type="text" placeholder="이메일" id="email" name="email" class="indata">
+                    <input type="text" placeholder="연락처" id="phone" name="phone" class="indata">
+                    <div class="btn_box">
+                        <input type="submit" value="회원가입" id="signup_btn">
+                        <input type="reset" value="초기화" id="signup_cancle">
+                    </div>
+                    <input type="hidden" name="checkval" id="hidval">
+                    <label for="" class="signup_cls">
+                        <span class="xi-close"></span>
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="src_frm_fr">
+            <form action="" id="src_frm">
+                <h2 class="src_tit">Search</h2>
+                <input type="text" id="src_bar">
+                <button id="src_btn">
+                    <span class="xi-search"></span>
+                </button>
+                <label for="" class="src_cls">
+                    <span class="xi-close"></span>
+                </label>
+            </form>
+        </div>
+
+        <main id="ct">
+            <div class="page page1">
+                <div class="bn_box">
+                    <div class="bn_txt_box">
+                        <h2 class="bn_tit"><b>건강</b>한 웃음, <b>건강</b>한 사회</h2>
+                        <p class="bn_com">환인제약은 질병의 고통을 멀리하고<br>
+                            <b>생명의 소중함</b>을 추구합니다</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page page2">
+                <div class="right_box">
+                    <p class="page_txt_deco">Whan In Pharm.</p>
+                    <h2 class="page_tit">R&D</h2>
+                    <p class="page_com">환인제약은 차별화된 R&D 역량과<br>
+                            오픈이노베이션을 통해 새로운 가치를 창출합니다.</p>
+                    <button class="page_more_btn">MORE</button>
+                </div>
+                <div class="left_box">
+                    <div class="page_img"></div>
+                </div>
+            </div>
+            <div class="page page3">
+                <div class="right_box">
+                    <div class="page_img"></div>
+                </div>
+                <div class="left_box">
+                    <p class="page_txt_deco">Whan In Pharm.</p>
+                    <h2 class="page_tit">Coperation</h2>
+                    <p class="page_com">우리는 건강하고 행복한 세상을<br>
+                            만들어 가는데 앞장섭니다.</p>
+                    <button class="page_more_btn">MORE</button>
+                </div>
+            </div>
+            <div class="page page4">
+                <div class="right_box">
+                    <p class="page_txt_deco">Whan In Pharm.</p>
+                    <h2 class="page_tit">Product</h2>
+                    <p class="page_com">환인제약의 다양한 제품을 소개합니다.</p>
+                    <button class="page_more_btn">MORE</button>
+                </div>
+                <div class="left_box">
+                    <div class="page_img"></div>
+                </div>
+            </div>
+            <div class="page page5">
+                <div class="tit_box">
+                    <p class="page_txt_deco">Whan In Pharm.</p>
+                    <h2 class="page_tit">NEWS</h2>
+                    <p class="page_com">환인제약의 새로운 소식입니다.</p>
+                </div>
+                <div class="news_fr">
+                    <div class="news_con">
+                        <ul class="news_box">
+                            <li class="item item1">
+                                <a href="sub5.html">
+                                    <div class="thum_img"></div>
+                                    <div class="thum_txt_box">
+                                        <h3 class="thum_tit">​​환인제약, 국제표준 부패방지경영시스템 'ISO 37001' 인증 획득</h3>
+                                        <p class="thum_com">환인제약(대표이사 이원범)이 부패방지경영시스템 국제표준인 ISO 37001(Anti-Bribery Management System) 인증을 획득했다.</p>
+                                        <p class="thum_date">19-11-14</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item item2">
+                                <a href="sub5.html">
+                                    <div class="thum_img"></div>
+                                    <div class="thum_txt_box">
+                                        <h3 class="thum_tit">환인제약-GSK 한국법인, 신경과 의약품 4개 브랜드 전략적 제휴</h3>
+                                        <p class="thum_com">​ GSK (한국법인 사장 줄리엔 샘슨)와 환인제약 (대표이사 이원범)은 최근 GSK의 신경과 질환 관련 4개 의약품 브랜드의 국내 영업에 대한 공동 프로모션 (co-promotion) 협약을 체결했다고 8월 16일 밝혔다.</p>
+                                        <p class="thum_date">19-08-19</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item item3">
+                                <a href="sub5.html">
+                                    <div class="thum_img"></div>
+                                    <div class="thum_txt_box">
+                                        <h3 class="thum_tit">환인제약, 로나큐정 2mg 및 4mg 추가 발매</h3>
+                                        <p class="thum_com"> ​​환인제약(대표이사 이원범)은 조현병 치료제인 ‘로나큐정 2mg과 4mg(블로난세린)’ 을 5월 1일 발매​한다.​</p>
+                                        <p class="thum_date">19-05-02</p>
+                                    </div>
+                              </a>
+                            </li>
+                            <li class="item item4">
+                                <a href="sub5.html">
+                                    <div class="thum_img"></div>
+                                    <div class="thum_txt_box">
+                                        <h3 class="thum_tit">환인제약, 오리지널 항우울제 아고틴정 25mg 급여 출시</h3>
+                                        <p class="thum_com">환인제약(대표이사 이원범)은 주요우울증 치료제인 ‘아고틴정25mg(아고멜라틴)’을 4월 27일 발매한다.</p>
+                                        <p class="thum_date">19-04-26</p>   
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item item5">
+                                <a href="sub5.html">
+                                    <div class="thum_img"></div>
+                                    <div class="thum_txt_box">
+                                        <h3 class="thum_tit">환인제약, 제21회 환인정신의학상 시상</h3>
+                                        <p class="thum_com">환인제약(대표이사 이원범)과 대한신경정신의학회가 공동 제정하여 운영중인 ‘환인정신의학상’ 시상식이 4월 11일 그랜드힐튼호텔에서 개최된 제62차 대한신경정신의학회 정기총회에서 열렸다.</p>
+                                        <p class="thum_date">19-04-16</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item item6">
+                                <a href="sub5.html">
+                                    <div class="thum_img"></div>
+                                    <div class="thum_txt_box">
+                                        <h3 class="thum_tit">환인제약, 로나큐정 8mg 발매</h3>
+                                        <p class="thum_com">환인제약(대표이사 이원범)은 조현병 치료제인 ‘로나큐정8mg(블로난세린)’을 4월 1일 발매한다.</p>
+                                        <p class="thum_date">19-04-01</p>      
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item item7">
+                                <a href="sub5.html">
+                                    <div class="thum_img"></div>
+                                    <div class="thum_txt_box">
+                                        <h3 class="thum_tit">환인제약, 케프렙톨서방정 750mg 추가 발매</h3>
+                                        <p class="thum_com">환인제약(대표이사 이원범)은 뇌전증 치료제인 ‘케프렙톨서방정750mg(레비티라세탐)’을 4월 1일 발매한다.</p>
+                                        <p class="thum_date">19-04-01</p>     
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item item8">
+                                <a href="sub5.html">
+                                    <div class="thum_img"></div>
+                                    <div class="thum_txt_box">
+                                        <h3 class="thum_tit">환인제약, 케프렙톨서방정 500mg 발매</h3>
+                                        <p class="thum_com">환인제약(대표이사 이원범)은 뇌전증 치료제인 ‘케프렙톨서방정 500mg(레비티라세탐)’을 3월 1일 발매한다.</p>
+                                        <p class="thum_date">19-02-28</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="left_btn"><span class="xi-angle-left"></span></button>
+                        <button class="right_btn"><span class="xi-angle-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="ft">
+            <div class="ft_info">
+                <p><span class="xi-user-o"></span>대표이사 이원범</p>
+                <p><span class="xi-forum-o"></span>고객센터 080-405-1238</p>
+                <p><span class="xi-call"></span>대표전화 02-405-3000</p>
+                <p><span class="xi-mail-o"></span>팩스 02-404-2518</p>
+            </div>
+            <nav id="fnb">
+                <ul class="menu">
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">서울특별시 송파구 법원로 6길 11 환인빌딩 8F-11F<br>
+                ©Whan In Pharm. Co., Ltd. ALL RIGHTS RESERVED</div>
+            <div class="logo2"></div>
+        </footer>
+    </div>
+</body>
+</html>
