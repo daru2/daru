@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+
+/* NEON TEXT ANI */
+@keyframes h-neon1 {
+    0% {
+        text-shadow: 0 0 .5rem #FFF,
+        0 0 1rem #FFF,
+        0 0 1.5rem #FFF,
+        0 0 2rem #FDF200,
+        0 0 2.5rem #FDF200,
+        0 0 3rem #FDF200,
+        0 0 4rem #FDF200,
+        0 0 5rem #FDF200;
+    }
+    100% {
+        text-shadow: 0 0 .2rem #FFF,
+        0 0 .4rem #FFF,
+        0 0 .8rem #FFF,
+        0 0 1rem #FDF200,
+        0 0 1.4rem #FDF200,
+        0 0 2rem #FDF200,
+        0 0 2.4rem #FDF200,
+        0 0 3rem #FDF200;
+        color: #FFF;
+    }
+}
+
+@keyframes neon1 {
+    0%, 100% {
+        text-shadow: 0 0 1rem #FA1C16,
+        0 0 3rem #FA1C16,
+        0 0 10rem #FA1C16,
+        0 0 10rem #FA1C16,
+        0 0 .4rem #FED128,
+        .5rem .5rem .1rem #806914;
+        color: #FED128;
+    }
+    50% {
+        text-shadow: 0 0 .5rem #800E0B,
+        0 0 1.5rem #800E0B,
+        0 0 5rem #800E0B,
+        0 0 5rem #800E0B,
+        0 0 .2rem #800E0B,
+        .5rem .5rem .1rem #40340A;
+        color: #806914;
+    }
+}
+
+@keyframes neon2 {
+    0%, 100% {
+      text-shadow: 0 0 1rem #1041FF,
+      0 0 3rem #1041FF,
+      0 0 10rem #1041FF,
+      0 0 10rem #1041FF,
+      0 0 .4rem #8BFDFE,
+      .5rem .5rem .1rem #147280;
+      color: #28D7FE;
+    }
+    50% {
+      text-shadow:
+      0 0 .5rem #082180,
+      0 0 1.5rem #082180,
+      0 0 5rem #082180,
+      0 0 5rem #082180,
+      0 0 .2rem #082180,
+      .5rem .5rem .1rem #0A3940;
+      color: #146C80;
+    }
+}
+
+@keyframes neon3 {
+    0%, 100% {
+        text-shadow: 0 0 1rem rgb(234, 56, 243),
+        0 0 3rem rgb(232, 53, 241),
+        0 0 10rem rgb(232, 53, 241),
+        0 0 10rem rgb(232, 53, 241),
+        0 0 .4rem rgb(245, 115, 252)
+        .5rem .5rem .1rem rgb(201, 112, 206);
+        color: rgb(230, 152, 235);
+    }
+    32% {
+      text-shadow: none;
+      color: rgb(34, 3, 36);
+    }
+    34% {
+      color: #FFACFC;
+      text-shadow: 0 0 3rem #F148FB;
+    }
+    36% {
+      text-shadow: none;
+      color: rgb(34, 3, 36);
+    }
+    38% {
+      color: #FFACFC;
+      text-shadow: 0 0 3rem #F148FB;
+    }
+    50% {
+      text-shadow: none;
+      color: rgb(34, 3, 36);
+    }
+    52% {
+      color: #FFACFC;
+      text-shadow: 0 0 3rem #F148FB;
+    }
+    54% {
+      text-shadow: none;
+      color: rgb(34, 3, 36);
+    }
+    56% {
+      color: #FFACFC;
+      text-shadow: 0 0 3rem #F148FB;
+    }
+}
+/* NEON TEXT ANI END */
+
+
+/* PROGRESS ANI */
+@keyframes progress {
+    0% { stroke-dasharray: 0 100;}
+}
+/* PROGRESS ANI END */
+
+
+/* NEON BOX ANI */
+@keyframes neon_box1{
+    0%, 100% {
+      box-shadow: 0 0 .1rem #F148FB,
+      0 0 .3rem #F148FB,
+      0 0 1rem #F148FB,
+      0 0 1rem #7122FA,
+      0 0 .04rem #FFACFC,
+      .05rem .05rem .1rem #7122FA;
+    }
+    50% {
+      box-shadow: 0 0 .05rem #7122FA,
+      0 0 .15rem #7122FA,
+      0 0 .5rem #7122FA,
+      0 0 .5rem #7122FA,
+      0 0 .02rem #7122FA,
+      .05rem .05rem .1rem #F148FB;
+    } 
+}
+
+@keyframes neon_box2{
+    0%, 100% {
+      box-shadow: 0 0 1rem #1041FF,
+      0 0 3rem #1041FF,
+      0 0 10rem #1041FF,
+      0 0 10rem #1041FF,
+      0 0 .4rem #8BFDFE,
+      .5rem .5rem .1rem #147280;
+    }
+    50% {
+      box-shadow:
+      0 0 .5rem #082180,
+      0 0 1.5rem #082180,
+      0 0 5rem #082180,
+      0 0 5rem #082180,
+      0 0 .2rem #082180,
+      .5rem .5rem .1rem #0A3940;
+    }
+}
+
+@keyframes neon_box3 {
+    0%, 100% {
+        box-shadow: 0 0 .1rem rgb(234, 56, 243),
+        0 0 .3rem rgb(232, 53, 241),
+        0 0 1rem rgb(232, 53, 241),
+        0 0 1rem rgb(232, 53, 241),
+        0 0 .4rem rgb(245, 115, 252)
+        .05rem .05rem .01rem rgb(201, 112, 206),
+        0 0 .1rem rgb(234, 56, 243) inset,
+        0 0 .3rem rgb(232, 53, 241) inset,
+        0 0 1rem rgb(232, 53, 241) inset,
+        0 0 1rem rgb(232, 53, 241) inset,
+        0 0 .4rem rgb(245, 115, 252) inset,
+        .05rem .05rem .01rem rgb(201, 112, 206) inset;
+    }
+    32% {
+        box-shadow: none;
+        border-color: #555;
+    }
+    34% {
+        box-shadow: 0 0 .3rem #F148FB;
+        box-shadow: 0 0 .3rem #F148FB inset;
+    }
+    36% {
+        box-shadow: none;
+        border-color: #555;
+    }
+    38% {
+        box-shadow: 0 0 .3rem #F148FB;
+    }
+    50% {
+        box-shadow: none;
+        border-color: #555;
+    }
+    52% {
+        box-shadow: 0 0 .3rem #F148FB;
+    }
+    54% {
+        box-shadow: none;
+        border-color: #555;
+    }
+    56% {
+        box-shadow: 0 0 .3rem #F148FB;
+    }
+
+
+    
+    0%, 100% {
+        box-shadow:
+    }
+    32% {
+        box-shadow: none;
+        border-color: #F148FB;
+    }
+    34% {
+        
+    }
+    36% {
+        box-shadow: none;
+        border-color: #F148FB;
+    }
+    38% {
+        box-shadow: 0 0 .3rem #F148FB inset;
+    }
+    50% {
+        box-shadow: none;
+        border-color: #F148FB;
+    }
+    52% {
+        box-shadow: 0 0 .3rem #F148FB inset;
+    }
+    54% {
+        box-shadow: none;
+        border-color: #F148FB;
+    }
+    56% {
+        box-shadow: 0 0 .3rem #F148FB inset;
+    }
+}
+/* NEON BOX ANI END */
+
+  

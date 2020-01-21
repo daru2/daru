@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 모바일웹 스크롤에 따라 주소창 숨기기/드러내기 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script>
+    // 자바스크립트로 모바일 웹 주소창 숨기기 (구형 모바일을 위한 것)
+    window.addEventListener('load', function() {
+        // body의 height를 살짝 늘리는 코드
+    document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+        // scroll를 제어 하는 코드
+    setTimeout(function(){ window.scrollTo(0, 1); }, 100); 
+    });
+    </script>
+
+    <!-- 검색엔진 최적화 -->
+    <meta name="author" content="KIMHYUNWOO">
+    <meta name="keywords" content="검색어">
+    <meta name="description" content="설명">
+
+    <!-- 오픈그래프 -->
+    <meta property="fb:app_id" content="페이스북의 앱아이디">
+    <meta property="og:site_name" content="사이트나 앱이름">
+    <meta property="og:title" content="사이트 제목">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="도메인네임을 비롯한 사이트 주소">
+    <meta property="og:image" content="">
+    <meta property="twitter:card" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <!-- 파비콘 -->
+    <link rel="canonical" href="#">
+    <link rel="shortcut ab_icon" type="image/x-ab_icon" href="">
+    <link rel="ab_icon" type="image/png" sizes="180x180" href="">
+    <link rel="apple-touch-ab_icon" sizes="180x180" href="">
+    <link rel="shortcut ab_icon" type="image/x-ab_icon" sizes="180x180" href="">
+
+    <!-- CSS링크 -->
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>HyunWoo's Portfolio</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet"> <!-- font-family: 'Noto Sans KR', sans-serif; -->
+
+    <style>
+
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+    
+    </script>
+</head>
+<body>
+    <header id="hd">
+        <nav id="gnb">
+            <ul class="menu">
+                <li class="home_btn">Home</li>
+                <li>Intro</li>
+                <li>Ability</li>
+                <li>Portfolio</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main id="ct">
+        <section class="page" id="page1">
+            <h1 id="page1_tit">Portfolio</h1>
+            <h2 id="page1_sub_tit">Web Publisher/Front-End Developer</h2>
+            <h2 id="page1_name">Kim Hyun Woo</h2>
+        </section>
+        <section class="page" id="page2">
+            <div class="page_cover"></div>
+            <figure class="pic_fr">
+                <div class="pic_box">
+                    <div class="pic vsb" id="pic1">pic1</div>
+                    <div class="pic" id="pic2">pic2</div>
+                </div>
+                </figure>
+            <div class="txt_fr">
+                <div class="blank_box"></div>
+                <div class="txt_box1">
+                    <h2 class="box_tit">Profile</h2>
+                    <p class="box_com">
+                        <span>김현우</span><br>
+                        <span>1990.12.30</span><br>
+                        <span>대전광역시 대덕구 비래동</span><br>
+                        <span>rider5468@naver.com</span>
+                    </p>
+                </div>
+                <div class="txt_box2">
+                    <h2 class="box_tit">License</h2>
+                    <p class="box_com">
+                        <span>GTQ - 그래픽기술자격 1급</span><br>
+                        <span>전산세무 2급</span><br>
+                        <span>전산회계 1급</span><br>
+                        <span>FAT 1급</span><br>
+                        <span>ERP 인사정보관리사 1급</span><br>
+                        <span>ITQ Master (한글, 엑셀    , 파워포인트)</span><br>
+                    </p>
+                </div>
+                <div class="txt_box3">
+                    <h2 class="box_tit">Motto</h2>
+                    <p class="box_com">
+                        <span>『 당신이 있는 곳에서,</span><br>
+                        <span>당신이 가진 것을 가지고,</span><br>
+                        <span>당신이 할 수 있는 것을 해라 』</span><br>
+                    </p>
+                </div>
+                <div class="q_icon_box">
+                    <h2 class="box_tit">Quick</h2>
+                    <a href=""><i class="fab fa-github" style="font-size: 28px;"></i></a>
+                    <a href=""><i class="fas fa-file-pdf" style="font-size: 28px;"></i></a>
+                    <a href=""><i class="fab fa-instagram" style="font-size: 28px;"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="page" id="page3">
+            <div class="page_cover"></div>
+            <div class="ab_box">
+                <div class="item ab_html">
+                    <h3 class="ab_tit">HTML5</h3>
+                    <div class="ab_icon"></div>
+                    <div class="ab_per">
+                        <div class="circle_box">
+                            <svg viewbox="0 0 36 36" class="circle_chart chart1">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path class="circle"
+                                stroke-dasharray="84, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <text x="18" y="20.35" class="percentage">84%</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ab_css">
+                    <h3 class="ab_tit">CSS3</h3>
+                    <div class="ab_icon"></div>
+                    <div class="ab_per">
+                        <div class="circle_box">
+                            <svg viewbox="0 0 36 36" class="circle_chart chart2">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path class="circle"
+                                stroke-dasharray="75, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <text x="18" y="20.35" class="percentage">75%</text>
+                            </svg>
+                        </div>
+
+                    </div>
+              </div>
+                <div class="item ab_js">
+                    <h3 class="ab_tit">javascript</h3>
+                    <div class="ab_icon"></div>
+                    <div class="ab_per">
+                        <div class="circle_box">
+                            <svg viewbox="0 0 36 36" class="circle_chart chart3">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path class="circle"
+                                stroke-dasharray="50, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <text x="18" y="20.35" class="percentage">50%</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ab_jq">
+                    <h3 class="ab_tit">jQuery</h3>
+                    <div class="ab_icon"></div>
+                    <div class="ab_per">
+                        <div class="circle_box">
+                            <svg viewbox="0 0 36 36" class="circle_chart chart4">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path class="circle"
+                                stroke-dasharray="60, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <text x="18" y="20.35" class="percentage">60%</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ab_oa">
+                    <h3 class="ab_tit">OA</h3>
+                    <div class="ab_icon ab_icon_"></div>
+                    <div class="ab_per">
+                        <div class="circle_box">
+                            <svg viewbox="0 0 36 36" class="circle_chart chart5">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path class="circle"
+                                stroke-dasharray="70, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <text x="18" y="20.35" class="percentage">70%</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page" id="page4">
+            <div class="page_cover"></div>
+            <figure class="sl">
+                <ul class="sl_box">
+                    <li>
+                        <h2 class="sl_tit_box on">종로구문화관광 리뉴얼</h2>
+                        <div class="sl_con on">
+                            <img src="./src/cap1.PNG" alt="종로구문화관광" class="sl_img item1 on">
+                            <p class="sl_com_box">
+                                <c>Hover Me!</c>
+                                <span>
+                                종로구는 오랜 역사를 가진 문화재가 많으며,<br>
+                                동시에 청년들이 꿈을 꾸며 열심히 활동하는 곳입니다.<br>
+                                문화재가 가진 고풍스러운 느낌과<br>
+                                청년들의 세련된 느낌을 주고자 했습니다.<br>
+                                <a href="http://daru2.github.io/daru/1/" target="_blank" class="more">MORE</a>
+                                 </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h2 class="sl_tit_box">환인제약 리뉴얼</h2>
+                        <div class="sl_con">
+                            <img src="./src/cap2.png" alt="환인제약" class="sl_img item2">
+                            <p class="sl_com_box">
+                                <c>Hover Me!</c>
+                                <span>
+                                전문적이고 신뢰할 수 있는 느낌의 쿨톤 계열의 색상과<br>
+                                ‘건강한 웃음, 건강한 행복’이라는 슬로건을 보고<br>
+                                따뜻하고 건강한 느낌의 웜톤 계열의 색상을 조합했습니다.<br>
+                                화려함보다 은은하고 느린 애니메이션을 통한<br>
+                                차분함을 표현하고자 했습니다.<br>
+                                <a href="http://daru2.github.io/daru/2/" target="_blank" class="more">MORE</a>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h2 class="sl_tit_box">부산광역시청 리뉴얼</h2>
+                        <div class="sl_con">
+                            <img src="./src/cap3.png" alt="부산광역시청" class="sl_img item3">
+                            <p class="sl_com_box">
+                                <c>Hover Me!</c>
+                                <span>
+                                지방청 사이트는 다양한 기능을 담고 있으므로<br>
+                                원하는 기능을 찾는 사용성이 중요하다고 생각합니다.<br>
+                                메인페이지에 분야별 아이콘과 검색 창을 구성해<br>
+                                사용자의 편리성을 부각시켰습니다.<br>
+                                중요한 소식이나 행사는 인터렉션 요소를 넣은 배너 등으로<br>
+                                한 눈에 파악할 수 있도록 해놓았습니다.<br>
+                                <a href="http://daru2.github.io/daru/3/" target="_blank" class="more">MORE</a>
+                               </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h2 class="sl_tit_box">수지 퍼블리싱</h2>
+                        <div class="sl_con">
+                            <img src="./src/cap4.PNG" alt="수지" class="sl_img item4">
+                            <p class="sl_com_box">
+                                <c>Hover Me!</c>
+                                <span>
+                                흰색과 검은색의 클래식하고 깔끔한 조합에<br>
+                                핫핑크 색상의 포인트를 주었습니다.<br>
+                                수지는 연예계 전분야에서 활동하기에<br>
+                                영화, 드라마, 앨범, TV쇼 등으로 카테고리를 나눴습니다.<br>
+                                메인화면에서는 수지의 간략한 프로필을 기재해봤습니다.<br>
+                                * 워드프레스를 이용했습니다.<br>
+                                <a href="http://daru2.dothome.co.kr/b1" target="_blank" class="more">MORE</a>
+                            </span>
+                            </p>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <h2 class="sl_tit_box">중앙고등학교 리뉴얼</h2>
+                        <div class="sl_con">
+                            <img src="./src/cap5.PNG" alt="중앙고등학교" target="_blank" class="sl_img item5">
+                            <p class="sl_com_box">
+                                <c>Hover Me!</c>
+                                <span>
+                                종로 중앙고등학교는 유구한 역사를 가진 학교로서<br>
+                                많은 인물을 배출한 곳입니다.<br>
+                                또한 촬영지로 쓰일 만큼 건물이 아름답습니다.<br>
+                                교표의 색상을 중심으로 색조합을 해봤습니다.<br>
+                                아름다운 외관을 가진 학교 사진으로 슬라이드를 만들었습니다.<br>
+                                * 그누보드5를 이용했습니다.<br>
+                                <a href="http://rider5468.dothome.co.kr/c1" target="_blank" class="more">MORE</a>
+                                </span>
+                            </p>
+                        </div>
+
+                    </li>
+                </ul>
+                <div class="sl_btn_box">
+                    <button class="sl_up_btn"><i class="far fa-caret-square-up" style="font-size: 48px;"></i></button>
+                    <button class="sl_down_btn"><i class="far fa-caret-square-down" style="font-size: 48px;"></i></button>
+                </div>
+            </figure>
+        </section>
+        <section class="page" id="page5">
+            <div class="page_cover"></div>
+            <div class="p5_back">
+                <span class="back1"></span>
+                <span class="back2"></span>
+                <span class="back3"></span>
+                <span class="back4"></span>
+                <span class="back5"></span>
+            </div>
+            <div class="contact_fr">
+                <div class="contact_box">
+                    <div class="contact">
+                        <h2 class="contact_tit">CONTACT</h2>
+                        <p class="contact_com">
+                            <span class="phone">010 - 8690 - 1645</span>
+                            <span class="mail">rider5468@naver.com</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

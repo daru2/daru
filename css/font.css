@@ -1,0 +1,9 @@
+@font-face{
+    font-family: "font1";
+    src: url('../font/BMEULJIROTTF.eot')format('eot');
+    src: url('../font/BMEULJIROTTF.woff')format('woff');
+
+    font-family: "font2";
+    src: url('../font/YANGJIN.eot')format('eot');
+    src: url('../font/YANGJIN.woff')format('eot');
+}
