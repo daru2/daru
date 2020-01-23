@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+    $("#page1").find(".page_cover").fadeIn(500);
     /* 1page scroll */
 
     $(".page").each(function (index) {
@@ -35,7 +37,7 @@ $(document).ready(function(){
             $("html,body").stop().animate({
                 scrollTop: moveTop + 'px'
             }, {
-                duration: 800, complete: function () {
+                duration: 500, complete: function () {
                 }
             });
         });
@@ -50,17 +52,22 @@ $(document).ready(function(){
         var cnt = parseInt($(this).scrollTop() / winH);
         $(".page").eq(cnt).siblings().find(".page_cover").fadeOut(500);
         if( cnt >= 1 ){
-            $(".home_btn").css("display","block");
             $("#gnb .menu").addClass("on");
             $("#gnb .menu li").removeClass("on");
             $("#gnb .menu li").eq(cnt).addClass("on");
             $(".page").eq(cnt).find(".page_cover").fadeIn(500);
             
         } else {
-            $(".home_btn").fadeOut();
             $("#gnb .menu").removeClass("on");
             $("#gnb .menu li").removeClass("on");
         }
+        if ( cnt == 0){
+            $("#page1").find(".page_cover").fadeIn(500);
+            $(".home_btn").addClass("on");
+        } else {
+            $(".home_btn").removeClass("on");
+        }
+
         /* #page2 */
         if( cnt == 1 ){
             $("#page2").find("*").addClass("on");
@@ -85,8 +92,16 @@ $(document).ready(function(){
         var idx = $(this).index();
         var p_idx = $(".page").eq(idx);
         var p_distance = p_idx.offset().top;
-        $("html, body").stop().animate({scrollTop : p_distance}, 1000);
+        $("html, body").stop().animate({scrollTop : p_distance}, 500);
     });
+
+    $("#gnb .home_btn").on("click", function(e){
+        e.preventDefault();
+        $(this).addClass("on");
+        $("#gnb .menu li").removeClass("on");
+        $("html, body").stop().animate({scrollTop : 0}, 500);
+
+    })
 
     /* 메뉴클릭시 위치로 스크롤 끝*/
 
@@ -101,29 +116,46 @@ $(document).ready(function(){
 
 
     /* page3 상하 슬라이더 */
-    function downAni(){
-        $(".sl_box").not(":animated").animate({"margin-top": "-100vh"}, 1000, function(){
-            $(".sl_box li").eq(0).appendTo(".sl_box");
-            $(".sl_box").css("margin-top", "0");
-            $(".sl_box li").eq(0).find(".sl_tit_box, .sl_con").addClass("on");
-            $(".sl_box li").eq(0).siblings().find(".sl_tit_box, .sl_con").removeClass("on");
-        });
-    }
-    function upAni(){
-        var len = $(".sl_box li").length;
-        $(".sl_box li").eq(len-1).prependTo(".sl_box");
-        $(".sl_box").css("margin-top", "-100vh");
-        $(".sl_box").not(":animated").animate({"margin-top" : "0"}, 1000, function(){
-            $(".sl_box li").eq(0).find(".sl_tit_box, .sl_con").addClass("on");
-            $(".sl_box li").eq(0).siblings().find(".sl_tit_box, .sl_con").removeClass("on");
-        });
-    
-    }
-    $(".sl_up_btn").on("click", function(){
-        upAni();
-    });
-    $(".sl_down_btn").on("click", function(){
-        downAni();
-    });
+    // function nextAni(){
+
+    //     $(".sl_box li").eq(0).not(":animated").fadeOut(500, function(){
+    //         $(".sl_box li").eq(0).appendTo(".sl_box");
+    //         $(".sl_box li").eq(0).fadeIn(500);
+    //         $(".sl_box li").eq(0).find(".sl_tit_box, .sl_con").addClass("on");
+    //         $(".sl_box li").eq(0).siblings().find(".sl_tit_box, .sl_con").removeClass("on");
+    //     });
+
+    // }
+    // function prevAni(){
+    //     var len = $(".sl_box li").length;
+    //     $(".sl_box li").eq(0).not(":animated").fadeOut(500, function(){
+    //         $(".sl_box li").eq(len-1).prependTo(".sl_box");
+    //         $(".sl_box li").eq(0).fadeIn(500);
+    //         $(".sl_box li").eq(0).find(".sl_tit_box, .sl_con").addClass("on");
+    //         $(".sl_box li").eq(0).siblings().find(".sl_tit_box, .sl_con").removeClass("on");
+    //     });
+        
+    // }
+    // $(".sl_prev_btn").on("click", function(){
+    //     prevAni();
+    // });
+    // $(".sl_next_btn").on("click", function(){
+    //     nextAni();
+    // });
     /* 상하 슬라이더 끝 */
+
+    /* page3 슬라이더 on클래스 부여 */
+
+    $(".slide__more__btn").on("click", function(){
+        $(this).toggleClass("on");
+        $(".slide__more__con").toggleClass("on");
+    });
+
+    $(".boxnav button").on("click", function(){
+        $(".slide__more__btn").removeClass("on");
+        $(".slide__more__con").removeClass("on");
+    });
+
+
+    /* page3 슬라이더 end */
 });
