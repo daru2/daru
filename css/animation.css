@@ -135,6 +135,43 @@
     }
   }
 
+  @keyframes neon5{
+    69% { opacity: 1;
+      color: white;
+      text-shadow:
+      0 0 0.2rem#0FF,
+      0 0 .5rem #0FF,
+      0 0 1rem #0FF,
+      0 0 .6rem #FFF,
+      0 0 1.1rem #FFF;}
+    70% { opacity: 0.4; text-shadow: none; color: #555;}
+    71% { opacity: 1;
+      color: white;
+      text-shadow:
+      0 0 0.2rem#0FF,
+      0 0 .5rem #0FF,
+      0 0 1rem #0FF,
+      0 0 .6rem #FFF,
+      0 0 1.1rem #FFF;}
+    72% { opacity: 0.4; text-shadow: none; color: #555;}
+    73% { opacity: 1;
+      color: white;
+      text-shadow:
+      0 0 0.2rem#0FF,
+      0 0 .5rem #0FF,
+      0 0 1rem #0FF,
+      0 0 .6rem #FFF,
+      0 0 1.1rem #FFF;}
+    74% { opacity: 0.4; text-shadow: none; color: #555;}
+    75% { opacity: 1;
+      color: white;
+      text-shadow:
+      0 0 0.2rem#0FF,
+      0 0 .5rem #0FF,
+      0 0 1rem #0FF,
+      0 0 .6rem #FFF,
+      0 0 1.1rem #FFF;}
+  }
 
 /* NEON TEXT ANI END */
 
