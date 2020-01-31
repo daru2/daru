@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -37,36 +37,51 @@
 
     <!-- 파비콘 -->
     <link rel="canonical" href="#">
-    <link rel="shortcut ab_icon" type="image/x-ab_icon" href="">
-    <link rel="ab_icon" type="image/png" sizes="180x180" href="">
-    <link rel="apple-touch-ab_icon" sizes="180x180" href="">
-    <link rel="shortcut ab_icon" type="image/x-ab_icon" sizes="180x180" href="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/png" sizes="180x180" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="">
+    <link rel="shortcut icon" type="image/x-icon" sizes="180x180" href="">
 
     <!-- CSS링크 -->
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/animation.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/slide.css">
-    <link rel="stylesheet" href="./css/infinite_light.css">
-    <title>HyunWoo's Portfolio</title>
-    <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+
+    <title>Title</title>
+    <!-- 폰트 cdn -->
+    <!-- 구글폰트 : https://fonts.google.com/?subset=korean&selection.family=Noto+Sans+KR -->
+    <!-- 눈누 : https://noonnu.cc/-->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet"> <!-- font-family: 'Noto Sans KR', sans-serif; -->
+
+    <!-- XE icon cdn -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 아이콘셋 : https://xpressengine.github.io/XEIcon/library-2.3.3.html -->
+    <!-- 형식 : <span class="xi-bars"></span>-->
 
     <style>
 
+
     </style>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- 스크립트 링크 -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/html5shiv.js"></script>
     <script src="./js/index.js"></script>
+
     <script>
     
     </script>
 </head>
 <body>
+    <div class="back_gra"></div>
     <header id="hd">
+        <div class="menu_icon_box">
+            <p class="menu_icon">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+            </p>
+        </div>
         <nav id="gnb">
             <ul class="menu">
-                <li class="home_btn on"><i class="fas fa-home" style="font-size: 22px;"></i></li>
+                <li class="on"><i class="fas fa-home" style="font-size: 40px;"></i></li>
                 <li>Intro</li>
                 <li>Ability</li>
                 <li>Portfolio</li>
@@ -75,31 +90,48 @@
         </nav>
     </header>
     <main id="ct">
-        <section class="page" id="page1">
-            <div class="background-image"></div>
-            <div class="page_cover"></div>
-            <h1 id="page1_tit">Portfolio</h1>
-            <h2 id="page1_sub_tit">Web Publisher/Front-End Developer</h2>
-            <h2 id="page1_name">KIM HYUN WOO</h2>
+        <section class="page page1">
+            <!-- SVG 텍스트 애니메이션 넣을 예정 -->
+            <div class="p1_txt_box">
+                <p class="p1_txt1">Welcome</p>
+                <p class="p1_txt2">To My Portfolio</p>
+                <p class="p1_txt3">I'm Kim HyunWoo</p>
+            </div>
         </section>
-        <section class="page" id="page2">
-            <div class="page_cover"></div>
-            <figure class="pic_fr">
-                <div class="pic_box">
-                    <div class="pic vsb" id="pic1"></div>
-                    <div class="pic" id="pic2"></div>
+        <section class="page page2">
+            <!-- 가운데 있다가 more 버튼 누르면 양쪽으로 갈라지고 폰이 약간 기운다-->
+            <div class="p2_left">
+                <div class="p2_left_fr">
+                    <div class="profile_box">
+                        <div class="profile_pic">
+                            <img src="./src/my_pic.png" alt="김현우사진" class="my_pic">
+                        </div>
+                        <div class="profile_tit">Profile</div>
+                        <div class="profile_con">
+                            <p class="floor1">
+                                <i class="far fa-user" style="font-size: 30px;"></i>
+                                <span class="name">김현우</span>
+                            </p>
+                            <p class="floor2">
+                                <i class="fas fa-birthday-cake" style="font-size: 30px;"></i>
+                                <span class="birth">1990. 12. 30</span>
+                            </p>
+                            <p class="floor3">
+                                <i class="fas fa-globe-asia" style="font-size: 30px;"></i>
+                                <span class="address">대전광역시 대덕구 비래동</span>
+                            </p>
+                            <p class="floor4">
+                                <button class="more_btn">
+                                    <span class="line line1"></span>
+                                    <span class="line line2"></span>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                </figure>
-            <div class="txt_fr">
-                <div class="txt_box1">
-                    <h2 class="box_tit">Profile</h2>
-                    <p class="box_com">
-                        <span>김현우</span><br>
-                        <span>1990.12.30</span><br>
-                        <span>대전광역시 대덕구 비래동</span><br>
-                    </p>
-                </div>
-                <div class="txt_box2">
+            </div>
+            <div class="p2_right">
+                <div class="more_top">
                     <h2 class="box_tit">License</h2>
                     <p class="box_com">
                         <span>GTQ - 그래픽기술자격 1급</span><br>
@@ -110,316 +142,229 @@
                         <span>ITQ Master (한글, 엑셀    , 파워포인트)</span><br>
                     </p>
                 </div>
-                <div class="txt_box3">
+                <div class="more_bot">
                     <h2 class="box_tit">Motto</h2>
                     <p class="box_com">
-                        <span>『 당신이 있는 곳에서,</span><br>
+                        <span>당신이 있는 곳에서,</span><br>
                         <span>당신이 가진 것을 가지고,</span><br>
-                        <span>당신이 할 수 있는 것을 해라 』</span><br>
+                        <span>당신이 할 수 있는 것을 해라</span><br>
                     </p>
                 </div>
-                <div class="q_icon_box">
-                    <h2 class="box_tit">Quick</h2>
-                    <a href="#"><i class="fab fa-github" style="font-size: 28px;"></i></a>
-                    <a href="./src/git_pdf.pdf" target="_blank"><i class="fas fa-file-pdf" style="font-size: 28px;"></i></a>
-                    <a href="https://www.instagram.com/gimhyeonu650/" target="_blank"><i class="fab fa-instagram" style="font-size: 28px;"></i></a>
+            </div>
+            <!-- 최상단 동그란 증명사진, 프로필 사항 하나씩 등장 애니메이션 -->
+        </section>
+        <section class="page page3">
+            <button class="p3_cls_btn">
+                <i class="fas fa-times" style="font-size: 48px;"></i>
+            </button>
+            <div class="part progress">
+                <span class="p3_icon">
+                    <i class="fas fa-spinner" style="font-size: 120px;"></i>
+                </span>
+                <span class="p3_explan">Progress</span>
+                <div class="p3_con">
+                    <div class="item ab_html">
+                        <h3 class="ab_tit">HTML5</h3>
+                        <div class="ab_icon"></div>
+                        <div class="ab_per">
+                            <div class="circle_box">
+                                <svg viewbox="0 0 36 36" class="circle_chart chart1">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                  <path class="circle"
+                                    stroke-dasharray="84, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                  <text x="18" y="20.35" class="percentage">84%</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item ab_css">
+                        <h3 class="ab_tit">CSS3</h3>
+                        <div class="ab_icon"></div>
+                        <div class="ab_per">
+                            <div class="circle_box">
+                                <svg viewbox="0 0 36 36" class="circle_chart chart2">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                  <path class="circle"
+                                    stroke-dasharray="75, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                  <text x="18" y="20.35" class="percentage">75%</text>
+                                </svg>
+                            </div>
+    
+                        </div>
+                  </div>
+                    <div class="item ab_js">
+                        <h3 class="ab_tit">javascript</h3>
+                        <div class="ab_icon"></div>
+                        <div class="ab_per">
+                            <div class="circle_box">
+                                <svg viewbox="0 0 36 36" class="circle_chart chart3">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                  <path class="circle"
+                                    stroke-dasharray="50, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                  <text x="18" y="20.35" class="percentage">50%</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item ab_jq">
+                        <h3 class="ab_tit">jQuery</h3>
+                        <div class="ab_icon"></div>
+                        <div class="ab_per">
+                            <div class="circle_box">
+                                <svg viewbox="0 0 36 36" class="circle_chart chart4">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                  <path class="circle"
+                                    stroke-dasharray="60, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                  <text x="18" y="20.35" class="percentage">60%</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item ab_oa">
+                        <h3 class="ab_tit">OA</h3>
+                        <div class="ab_icon ab_icon_"></div>
+                        <div class="ab_per">
+                            <div class="circle_box">
+                                <svg viewbox="0 0 36 36" class="circle_chart chart5">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                  <path class="circle"
+                                    stroke-dasharray="70, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                  <text x="18" y="20.35" class="percentage">70%</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="part tools">
+                <span class="p3_icon">
+                    <i class="fas fa-tools" style="font-size: 120px;"></i>
+                </span>
+                <span class="p3_explan">Tools</span>
+                <div class="p3_con">
+                    <div class="gra_tool">
+                        <h3 class="tools_subtit">Graphic Tools</h3>
+                        <div class="tools_box">
+                            <div class="tool">
+                                <img src="./src/icon_photoshop.png" alt="포토샵 아이콘" class="tool_icon">
+                                <div class="tool_com">
+                                    선택, 편집, 레이어, 마스크, 펜, 타이포,<br>
+                                    커스텀 쉐이프, 필터, 스타일, 액션 등 활용 가능
+                                </div>
+                            </div>
+                            <div class="tool">
+                                <img src="./src/icon_illustrator.png" alt="일러스트레이터 아이콘" class="tool_icon">
+                                <div class="tool_com">
+                                    선택, 드로잉, 펜, 쉐이프, <br>
+                                    패스파인더, 블렌딩, 메쉬, 아트보드 등 활용 가능
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code_tool">
+                        <h3 class="tools_subtit">Coding Tools</h3>
+                        <div class="tools_box">
+                            <div class="tool">
+                                <div class="code_icon_box">
+                                    <img src="./src/icon_visual.png" alt="비주얼 스튜디오 코드 아이콘" class="tool_icon">
+                                    <img src="./src/icon_brakets.png" alt="브라켓 아이콘" class="tool_icon">
+                                </div>
+                                <div class="tool_com">
+                                    HTML5, CSS3, javascript, jQuery, php 등 활용 가능
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="part description">
+                <span class="p3_icon">
+                    <i class="far fa-comment-alt" style="font-size: 120px;"></i>
+                </span>
+                <span class="p3_explan">Skills</span>
+                <div class="p3_con">
+                    <p class="des">
+                        1. HTML5, CSS3 웹 표준 마크업<br>
+                        2. 웹 접근성과 크로스 브라우징 준수<br>
+                        3. 반응형 웹 제작 가능<br>
+                        4. javascript / jQuery 사용 가능<br>
+                        5. PHP 사용 경험 있음<br>
+                        6. SCSS/PUG 사용 경험 있음<br>
+                        7. 그누보드, 카페24, 워드프레스 사용 경험 있음
+                    </p>
                 </div>
             </div>
         </section>
-        <section class="page" id="page3">
-            <div class="page_cover"></div>
-            <div class="ab_box">
-                <div class="item ab_html">
-                    <h3 class="ab_tit">HTML5</h3>
-                    <div class="ab_icon"></div>
-                    <div class="ab_per">
-                        <div class="circle_box">
-                            <svg viewbox="0 0 36 36" class="circle_chart chart1">
-                              <path class="circle-bg"
-                                d="M18 2.0845
-                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                              <path class="circle"
-                                stroke-dasharray="84, 100"
-                                d="M18 2.0845
-                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                              <text x="18" y="20.35" class="percentage">84%</text>
-                            </svg>
-                        </div>
+        <section class="page page4">
+            <figure class="slider">
+                <div class="sl on">
+                    <div class="sl_con">
+                        <img src="./src/cap1.png" alt="종로구문화관광" class="sl_img">
                     </div>
                 </div>
-                <div class="item ab_css">
-                    <h3 class="ab_tit">CSS3</h3>
-                    <div class="ab_icon"></div>
-                    <div class="ab_per">
-                        <div class="circle_box">
-                            <svg viewbox="0 0 36 36" class="circle_chart chart2">
-                              <path class="circle-bg"
-                                d="M18 2.0845
-                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                              <path class="circle"
-                                stroke-dasharray="75, 100"
-                                d="M18 2.0845
-                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                              <text x="18" y="20.35" class="percentage">75%</text>
-                            </svg>
-                        </div>
-
-                    </div>
-              </div>
-                <div class="item ab_js">
-                    <h3 class="ab_tit">javascript</h3>
-                    <div class="ab_icon"></div>
-                    <div class="ab_per">
-                        <div class="circle_box">
-                            <svg viewbox="0 0 36 36" class="circle_chart chart3">
-                              <path class="circle-bg"
-                                d="M18 2.0845
-                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                              <path class="circle"
-                                stroke-dasharray="50, 100"
-                                d="M18 2.0845
-                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                              <text x="18" y="20.35" class="percentage">50%</text>
-                            </svg>
-                        </div>
+                <div class="sl">
+                    <div class="sl_con">
+                        <img src="./src/cap2.png" alt="환인제약" class="sl_img">
                     </div>
                 </div>
-                <div class="item ab_jq">
-                    <h3 class="ab_tit">jQuery</h3>
-                    <div class="ab_icon"></div>
-                    <div class="ab_per">
-                        <div class="circle_box">
-                            <svg viewbox="0 0 36 36" class="circle_chart chart4">
-                              <path class="circle-bg"
-                                d="M18 2.0845
-                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                              <path class="circle"
-                                stroke-dasharray="60, 100"
-                                d="M18 2.0845
-                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                              <text x="18" y="20.35" class="percentage">60%</text>
-                            </svg>
-                        </div>
+                <div class="sl">
+                    <div class="sl_con">
+                        <img src="./src/cap3.png" alt="부산광역시청" class="sl_img">
                     </div>
                 </div>
-                <div class="item ab_oa">
-                    <h3 class="ab_tit">OA</h3>
-                    <div class="ab_icon ab_icon_"></div>
-                    <div class="ab_per">
-                        <div class="circle_box">
-                            <svg viewbox="0 0 36 36" class="circle_chart chart5">
-                              <path class="circle-bg"
-                                d="M18 2.0845
-                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                              <path class="circle"
-                                stroke-dasharray="70, 100"
-                                d="M18 2.0845
-                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                  a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                              <text x="18" y="20.35" class="percentage">70%</text>
-                            </svg>
-                        </div>
+                <div class="sl">
+                    <div class="sl_con">
+                        <img src="./src/cap4.png" alt="수지" class="sl_img">
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="page" id="page4">
-            <div class="page_cover"></div>
-            <figure class="sl">
-                <div class="slideshow">
-                    <div class="gnb_cover"></div>
-                    <div class="slide__more__btn">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
+                <div class="sl">
+                    <div class="sl_con">
+                        <img src="./src/cap5.png" alt="중앙고등학교" class="sl_img">
                     </div>
-                    <div class="slide">
-                        <div class="slide__wrap">
-                            <div class="slide__img sl_img1"></div>
-                            <div class="slide__img__cover"></div>
-                            <div class="slide__title-wrap">
-                                <h3 class="slide__title">종로구문화관광</h3>
-                                <h4 class="slide__subtitle">
-                                    Responsive web<br>
-                                    Personal work<br>
-                                    2020.12.30 - 2019.01.17
-                                </h4>
-                            </div>
-                            <div class="slide__more__con">
-                                <span class="more__title">Concept</span>
-                                <span class="more__con concept">
-                                    종로구는 오랜 역사를 가진 문화재가 많으며,<br>
-                                    동시에 청년들이 꿈을 꾸며 열심히 활동하는 곳입니다.<br>
-                                    문화재가 가진 고풍스러운 느낌과<br>
-                                    청년들의 세련된 느낌을 주고자 했습니다.<br>
-                                </span>
-                                <span class="more__title">Color</span>
-                                <span class="more__con color" id="color1"></span>
-                                <a href="http://daru2.github.io/daru/1/" class="slide__link" target="_blank">LINK</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide__wrap">
-                            <div class="slide__img sl_img2"></div>
-                            <div class="slide__img__cover"></div>
-                            <div class="slide__title-wrap">
-                                <h3 class="slide__title">환인제약</h3>
-                                <h4 class="slide__subtitle">
-                                    Responsive web<br>
-                                    Personal work<br>
-                                    2019.12.01 - 2019.12.14
-                                </h4>
-                            </div>
-                            <div class="slide__more__con">
-                                <span class="more__title">Concept</span>
-                                <span class="more__con concept">
-                                    전문적이고 신뢰할 수 있는 느낌의 쿨톤 계열의 색상과<br>
-                                    ‘건강한 웃음, 건강한 행복’이라는 슬로건을 보고<br>
-                                    따뜻하고 건강한 느낌의 웜톤 계열의 색상을 조합했습니다.<br>
-                                    화려함보다 은은하고 느린 애니메이션을 통한<br>
-                                    차분함을 표현하고자 했습니다.<br>
-                                </span>
-                                <span class="more__title">Color</span>
-                                <span class="more__con color" id="color2"></span>
-                                <a href="http://daru2.github.io/daru/2/" class="slide__link" target="_blank">LINK</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide__wrap">
-                            <div class="slide__img sl_img3"></div>
-                            <div class="slide__img__cover"></div>
-                            <div class="slide__title-wrap">
-                                <h3 class="slide__title">부산광역시청</h3>
-                                <h4 class="slide__subtitle">
-                                    Responsive web<br>
-                                    Personal work<br>
-                                    2019.11.18 - 2019.11.30
-                                </h4>
-                            </div>
-                            <div class="slide__more__con">
-                                <span class="more__title">Concept</span>
-                                <span class="more__con concept">
-                                    지방청 사이트는 다양한 기능을 담고 있으므로<br>
-                                    원하는 기능을 찾는 사용성이 중요하다고 생각합니다.<br>
-                                    메인페이지에 분야별 아이콘과 검색 창을 구성해<br>
-                                    사용자의 편리성을 부각시켰습니다.<br>
-                                    중요한 소식이나 행사는 인터렉션 요소를 넣은 배너등으로<br>
-                                    한 눈에 파악할 수 있도록 해놓았습니다.<br>
-                                </span>
-                                <span class="more__title">Color</span>
-                                <span class="more__con color" id="color3"></span>
-                                <a href="http://daru2.github.io/daru/3/" class="slide__link" target="_blank">LINK</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide__wrap">
-                            <div class="slide__img sl_img4"></div>
-                            <div class="slide__img__cover"></div>
-                            <div class="slide__title-wrap">
-                                <h3 class="slide__title">SUZY</h3>
-                                <h4 class="slide__subtitle">
-                                    Responsive web<br>
-                                    Personal work<br>
-                                    2019.01.03 - 2019.01.05
-                                </h4>
-                            </div>
-                            <div class="slide__more__con">
-                                <span class="more__title">Concept</span>
-                                <span class="more__con concept">
-                                    흰색과 검은색의 클래식하고 깔끔한 조합에<br>
-                                    핫핑크 색상의 포인트를 주었습니다.<br>
-                                    수지는 연예계 전분야에서 활동하기에<br>
-                                    영화, 드라마, 앨범, TV쇼 등으로 카테고리를 나눴습니다.<br>
-                                    메인화면에서는 수지의 간략한 프로필을 기재해봤습니다.<br>
-                                    * 워드프레스를 이용했습니다.<br>
-                                </span>
-                                <span class="more__title">Color</span>
-                                <span class="more__con color" id="color4"></span>
-                                <a href="http://daru2.dothome.co.kr/b1" class="slide__link" target="_blank">LINK</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide__wrap">
-                            <div class="slide__img sl_img5"></div>
-                            <div class="slide__img__cover"></div>
-                            <div class="slide__title-wrap">
-                                <h3 class="slide__title">중앙고등학교</h3>
-                                <h4 class="slide__subtitle">
-                                    Adaptive web<br>
-                                    Personal work<br>
-                                    2019.12.24 - 2019.01.04
-                                </h4>
-                            </div>
-                            <div class="slide__more__con">
-                                <span class="more__title">Concept</span>
-                                <span class="more__con concept">
-                                    종로 중앙고등학교는 유구한 역사를 가진 학교로서<br>
-                                    많은 인물을 배출한 곳입니다.<br>
-                                    또한 촬영지로 쓰일 만큼 건물이 아름답습니다.<br>
-                                    교표의 색상을 중심으로 색조합을 해봤습니다.<br>
-                                    아름다운 외관을 가진 학교 사진으로 슬라이드를 만들었습니다.<br>
-                                    * 그누보드5를 이용했습니다.<br>
-                                </span>
-                                <span class="more__title">Color</span>
-                                <span class="more__con color" id="color5"></span>
-                                <a href="http://rider5468.dothome.co.kr/c1" class="slide__link" target="_blank">LINK</a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /slideshow -->
-                <nav class="boxnav">
-                    <button class="boxnav__item boxnav__item--prev">
-                        <i class="fas fa-caret-left" style="font-size: 48px;"></i>
-                    </button>
-                    <div class="boxnav__item boxnav__item--label">
-                        <span class="boxnav__label boxnav__label--current">1</span>
-                        <span class="boxnav__label boxnav__label--total"></span>
-                    </div>
-                    <button class="boxnav__item boxnav__item--next">
-                        <i class="fas fa-caret-right" style="font-size: 48px;"></i>
-                    </button>
-                </nav>
+                </div>
+                <!-- 버튼 만들 것 -->
+                
             </figure>
+            <button class="sl_btn"><!--임시--></button>
         </section>
-        <section class="page" id="page5">
-            <div class="back_box">
-                <video src="./src/video.mp4" muted autoplay loop></video>
-            </div>
-            <div class="contact_box">
-                <h2 class="contact_tit">Contact</h2>
-                <h4 class="contact_subtit">Phone</h4>
-                <p class="contact_con">010 - 8690 - 1645</p>
-                <h4 class="contact_subtit">E-Mail</h4>
-                <p class="contact_con">rider5468@naver.com</p>
-                <h2 class="contact_subtit">Quick</h2>
-                <div class="contact_icon">
-                    <a href="#"><i class="fab fa-github" style="font-size: 28px;"></i></a>
-                    <a href="./src/git_pdf.pdf" target="_blank"><i class="fas fa-file-pdf" style="font-size: 28px;"></i></a>
-                    <a href="https://www.instagram.com/gimhyeonu650/" target="_blank"><i class="fab fa-instagram" style="font-size: 28px;"></i></a>
-                </div>
-            </div>
-            
-
+        <section class="page page5">
+            <!-- 폼요소 / -->
         </section>
     </main>
-     
-    <!-- 슬라이더 -->
-    <script src="./js/imagesloaded.pkgd.min.js"></script>
-    <script src="./js/TweenMax.min.js"></script>
-    <script src="./js/slide.js"></script>
-    <!-- /슬라이더 -->
-
 </body>
 </html>
+
+
+<!--
+                   
+-->

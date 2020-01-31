@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-    $("#page1").find(".page_cover").fadeIn(500);
     /* 1page scroll */
 
     $(".page").each(function (index) {
@@ -43,48 +42,10 @@ $(document).ready(function(){
         });
     });
 
-    /* 1page scroll END */
-    
-    /* 스크롤 시 page별 on클래스 부여 */
+    /* /1page scroll */
 
-    var winH = parseInt($(window).height());
-    $(window).scroll(function(){
-        var cnt = parseInt($(this).scrollTop() / winH);
-        $(".page").eq(cnt).siblings().find(".page_cover").fadeOut(500);
-        if( cnt >= 1 ){
-            $("#gnb .menu").addClass("on");
-            $("#gnb .menu li").removeClass("on");
-            $("#gnb .menu li").eq(cnt).addClass("on");
-            $(".page").eq(cnt).find(".page_cover").fadeIn(500);
-            
-        } else {
-            $("#gnb .menu").removeClass("on");
-            $("#gnb .menu li").removeClass("on");
-        }
-        if ( cnt == 0){
-            $("#page1").find(".page_cover").fadeIn(500);
-            $(".home_btn").addClass("on");
-        } else {
-            $(".home_btn").removeClass("on");
-        }
 
-        /* #page2 */
-        if( cnt == 1 ){
-            $("#page2").find("*").addClass("on");
-        } else {
-            $("#page2").find("*").removeClass("on");
-        } // removeClass가 안되는 이유?
-
-        if( cnt == 2){
-            $(".circle_box").addClass("on");
-        } else {
-            $(".circle_box").removeClass("on");
-        } // circle은 둘다 안먹히는 중
-    });
-
-    /* 스크롤 시 page별 on클래스 부여 END */
-
-    /* 메뉴클릭시 위치로 스크롤 이동 */
+    /* 메뉴클릭시 위치로 스크롤 */
 
     $("#gnb .menu li").on("click", function(e){
         e.preventDefault();
@@ -103,61 +64,89 @@ $(document).ready(function(){
 
     })
 
-    /* 메뉴클릭시 위치로 스크롤 끝*/
+    /* /메뉴클릭시 위치로 스크롤 */
 
-    /* page2 사진 */
 
-    $(".pic").on("click", function(){
-        $(this).addClass("vsb");
-        $(this).siblings().removeClass("vsb");
+    /* 스크롤 시 page별 on클래스 부여 */
+
+    var winH = parseInt($(window).height());
+    $(window).scroll(function(){
+        var cnt = parseInt($(this).scrollTop() / winH);
+        $(".page").eq(cnt).siblings().find(".page_cover").fadeOut(500);
+        if( cnt >= 0 ){
+            $("#gnb .menu li").removeClass("on");
+            $("#gnb .menu li").eq(cnt).addClass("on");
+        } else {
+            $("#gnb .menu li").removeClass("on");
+        }
+
+        // /* #page2 */
+        // if( cnt == 1 ){
+        //     $("#page2").find("*").addClass("on");
+        // } else {
+        //     $("#page2").find("*").removeClass("on");
+        // } // removeClass가 안되는 이유?
+
+        // if( cnt == 2){
+        //     $(".circle_box").addClass("on");
+        // } else {
+        //     $(".circle_box").removeClass("on");
+        // } // circle은 둘다 안먹히는 중
+
     });
 
-    /* page2 사진 end */
+    /* /스크롤 시 page별 on클래스 부여 */
 
-
-    /* page3 상하 슬라이더 */
-    // function nextAni(){
-
-    //     $(".sl_box li").eq(0).not(":animated").fadeOut(500, function(){
-    //         $(".sl_box li").eq(0).appendTo(".sl_box");
-    //         $(".sl_box li").eq(0).fadeIn(500);
-    //         $(".sl_box li").eq(0).find(".sl_tit_box, .sl_con").addClass("on");
-    //         $(".sl_box li").eq(0).siblings().find(".sl_tit_box, .sl_con").removeClass("on");
-    //     });
-
-    // }
-    // function prevAni(){
-    //     var len = $(".sl_box li").length;
-    //     $(".sl_box li").eq(0).not(":animated").fadeOut(500, function(){
-    //         $(".sl_box li").eq(len-1).prependTo(".sl_box");
-    //         $(".sl_box li").eq(0).fadeIn(500);
-    //         $(".sl_box li").eq(0).find(".sl_tit_box, .sl_con").addClass("on");
-    //         $(".sl_box li").eq(0).siblings().find(".sl_tit_box, .sl_con").removeClass("on");
-    //     });
-        
-    // }
-    // $(".sl_prev_btn").on("click", function(){
-    //     prevAni();
-    // });
-    // $(".sl_next_btn").on("click", function(){
-    //     nextAni();
-    // });
-    /* 상하 슬라이더 끝 */
-
-    /* page3 슬라이더 on클래스 부여 */
-
-    $(".slide__more__btn").on("click", function(){
+    /* page2 more 클릭 */
+    $(".page2 .more_btn").on("click", function(){
         $(this).toggleClass("on");
-        $(".slide__more__con").toggleClass("on");
+        $(".p2_left, .p2_right").toggleClass("on");
     });
 
-    $(".boxnav button").on("click", function(){
-        $(".slide__more__btn").removeClass("on");
-        $(".slide__more__con").removeClass("on");
+    /* /page2 more 클릭 */
+
+    /* page3 part 클릭 */
+    $(".page3 .part").on("click", function(){
+        $(this).addClass("on").siblings(".part").css("display","none");
+        $(this).find("i").css("font-size","32px");
+        $(".p3_cls_btn").addClass("on");
+        $("p3_con").fadeIn(800);
+    });
+
+    $(".page3 .p3_cls_btn").on("click", function(){
+        $(".part").removeClass("on").fadeIn(300);
+        $(".part").find("i").css("font-size","120px");
+        $(".p3_cls_btn").removeClass("on");
+    });
+
+    /* /page3 part 클릭 */
+
+    /* page4 슬라이더 */
+
+    function nextAni(){
+        // $(".sl").eq(0).appendTo(".slider");
+        $(".sl").eq(1).css("z-index","3");
+        $(".sl").eq(1).addClass("on");
+        setTimeout( function(){
+            $(".slider .sl").eq(1).siblings().removeClass("on");
+            $(".slider .sl").eq(0).appendTo($(".slider"))
+            $(".sl").eq(0).css("z-index","0");
+        }, 600);
+    }
+
+
+    // 버튼 연속 클릭 막기
+    $(".sl_btn").on("click", function(){
+        nextAni();
+        var btn = $(this);
+        btn.attr("disabled", true);
+        setTimeout( function() {
+            btn.removeAttr("disabled");
+        }, 700);
     });
 
 
-    /* page3 슬라이더 end */
+    /* /page4 슬라이더 */
 
 
 });
