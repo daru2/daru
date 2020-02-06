@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@media screen and (max-width: 700px) {
+    html, body { font-size: 10px;}
+    .desk { display: none;}
+    .mo { display: block;}
+    .mo_hd { position: fixed; width: 100vw; height: 5rem; top: 0; left: 0; z-index: 100;}
+    .mo_hd_btn_box { float: right; width: 30vw; height: 100%; display: flex; justify-content: space-around; align-items: center;}
+    .mo_hd_btn_box button { cursor: pointer;}
+    .mo_hd_btn_box i { color: white; text-shadow: 0 0 5px #555;}
+    .mo_sc_frm { position: fixed; display: none; width: 100vw; height: 100vh; top: 0; left: 0; background-color: rgba(0,0,0,0.9);}
+    .mo_sc_frm_fr { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; }
+    .mo_sc_tit { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 3rem; letter-spacing: 1rem;}
+    .mo_scbar { width: 60%; height: 4rem; box-shadow: 0 0 5px #555; border-radius: 1rem; padding-left: 1rem; margin-right: 1rem; background-color: white; opacity: 0.6; transition: 0.3s;}
+    .mo_scbtn { width: 4rem; height: 4rem; text-shadow: 0 0 5px #555; border-radius: 100%;background-image: url(../src/icon/search_icon.png); background-size: 3rem; background-repeat: no-repeat; background-position: center; cursor: pointer; opacity: 0.6; transition: 0.3s;}
+    .mo_sc_cls { position: absolute; top: 1rem; right: 1rem; width: 4rem; height: 4rem; cursor: pointer;}
+    .mo_sc_cls i { color: white; text-shadow: 0 0 5px #555;}
+    .mo_scbar:focus { opacity: 1;}
+    .mo_scbar:focus ~ .mo_scbtn { opacity: 1;}
+    .mo_gnb { position: fixed; display: none; width: 100vw; height: 100vh; top: 0; left: 0; background-color: rgba(0,0,0,0.9);}
+    .mo_gnb .menu { display: flex; flex-flow: column; justify-content: center; align-items: center; width: 100%; height: 100%;}
+    .mo_gnb a { display: block; font-size: 3rem; font-weight: bold; color: white; padding: 2rem;}
+    .mo_gnb_cls { position: absolute; top: 1rem; right: 1rem; width: 4rem; height: 4rem; cursor: pointer;}
+    .mo_gnb_cls i { color: white; text-shadow: 0 0 5px #555;}
+
+    
+
+    .vs1 { height: 100vh;}
+    .slider1_txt_box { width: 80%; top: 40%; left: 50%;}
+    .slider1_tit { font-size: 2.2rem;}
+    .slider1_com { font-size: 1rem;}
+    .button_box { width: 100%; height: 15vh; bottom: 10vh;}
+
+
+
+
+}
+@media screen and (min-width: 701px) and (max-width: 1279px) {
+    html, body { font-size: 12px;}
+    .desk { display: none;}
+    .mo { display: block;}
+    .mo_hd { position: fixed; width: 100vw; height: 5rem; top: 0; left: 0; z-index: 100;}
+    .mo_hd_btn_box { float: right; width: 30vw; height: 100%; display: flex; justify-content: space-around; align-items: center;}
+    .mo_hd_btn_box button { cursor: pointer;}
+    .mo_hd_btn_box i { color: white; text-shadow: 0 0 5px #555;}
+    .mo_sc_frm { position: fixed; display: none; width: 100vw; height: 100vh; top: 0; left: 0; background-color: rgba(0,0,0,0.9);}
+    .mo_sc_frm_fr { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; }
+    .mo_sc_tit { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 3rem; letter-spacing: 1rem;}
+    .mo_scbar { width: 60%; height: 4rem; box-shadow: 0 0 5px #555; border-radius: 1rem; padding-left: 1rem; margin-right: 1rem; background-color: white; opacity: 0.6; transition: 0.3s;}
+    .mo_scbtn { width: 4rem; height: 4rem; text-shadow: 0 0 5px #555; border-radius: 100%;background-image: url(../src/icon/search_icon.png); background-size: 3rem; background-repeat: no-repeat; background-position: center; cursor: pointer; opacity: 0.6; transition: 0.3s;}
+    .mo_sc_cls { position: absolute; top: 3rem; right: 3rem; width: 4rem; height: 4rem; cursor: pointer;}
+    .mo_sc_cls i { color: white; text-shadow: 0 0 5px #555;}
+    .mo_scbar:focus { opacity: 1;}
+    .mo_scbar:focus ~ .mo_scbtn { opacity: 1;}
+    .mo_gnb { position: fixed; display: none; width: 100vw; height: 100vh; top: 0; left: 0; background-color: rgba(0,0,0,0.9);}
+    .mo_gnb .menu { display: flex; flex-flow: column; justify-content: center; align-items: center; width: 100%; height: 100%;}
+    .mo_gnb a { display: block; font-size: 3rem; font-weight: bold; color: white; padding: 2rem;}
+    .mo_gnb_cls { position: absolute; top: 3rem; right: 3rem; width: 4rem; height: 4rem; cursor: pointer;}
+    .mo_gnb_cls i { color: white; text-shadow: 0 0 5px #555;}
+
+    
+
+    .vs1 { height: 100vh;}
+    .slider1_txt_box { width: 80%; top: 40%; left: 50%;}
+    .slider1_tit { font-size: 2.2rem;}
+    .slider1_com { font-size: 1rem;}
+    .button_box { width: 100%; height: 15vh; bottom: 10vh;}
+}

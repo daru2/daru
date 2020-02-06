@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 모바일웹 스크롤에 따라 주소창 숨기기/드러내기 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script>
+    // 자바스크립트로 모바일 웹 주소창 숨기기 (구형 모바일을 위한 것)
+    window.addEventListener('load', function() {
+        // body의 height를 살짝 늘리는 코드
+    document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+        // scroll를 제어 하는 코드
+    setTimeout(function(){ window.scrollTo(0, 1); }, 100); 
+    });
+    </script>
+
+    <!-- 검색엔진 최적화 -->
+    <meta name="author" content="KIMHYUNWOO">
+    <meta name="keywords" content="검색어">
+    <meta name="description" content="설명">
+
+    <!-- 오픈그래프 -->
+    <meta property="fb:app_id" content="페이스북의 앱아이디">
+    <meta property="og:site_name" content="사이트나 앱이름">
+    <meta property="og:title" content="사이트 제목">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="도메인네임을 비롯한 사이트 주소">
+    <meta property="og:image" content="">
+    <meta property="twitter:card" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <!-- 파비콘 -->
+    <link rel="canonical" href="#">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/png" sizes="180x180" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="">
+    <link rel="shortcut icon" type="image/x-icon" sizes="180x180" href="">
+
+    <!-- CSS링크 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>소방청</title>
+    <!-- 폰트 cdn -->
+    <!-- 구글폰트 : https://fonts.google.com/?subset=korean&selection.family=Noto+Sans+KR -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet"> <!-- font-family: 'Noto Sans KR', sans-serif; -->
+    <!-- 폰트 어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <style>
+
+    </style>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/html5shiv.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+    
+    </script>
+    
+</head>
+<body>
+    <figure class="vs1">
+        <div class="slider1_txt_box">
+            <h2 class="slider1_tit"> 대한민국 소방청 </h2>
+            <p class="slider1_com">
+                국민의 위기에 여지없이 등장하는 우리들의 영웅!<br>
+                국민을 위해 희생하는 소방관들을 응원합니다.
+            </p>
+        </div>
+        <ul class="slider1">
+            <li class="sl1">
+                <div class="sl_cover"></div>
+            </li>
+            <li class="sl2">
+                <div class="sl_cover"></div>
+            </li>
+            <li class="sl3">
+                <div class="sl_cover"></div>
+            </li>
+            <li class="sl4">
+                <div class="sl_cover"></div>
+            </li>
+        </ul>
+        <div class="button_box">
+            <div class="button_fr">
+                <button class="button1 on">
+                    <span class="sl_progress"></span>
+                    <span class="sl_tit">slider1</span>
+                </button>
+                <button class="button2">
+                    <span class="sl_tit">slider2</span>
+                    <span class="sl_progress"></span>
+                </button>
+                <button class="button3">
+                    <span class="sl_progress"></span>
+                    <span class="sl_tit">slider3</span>
+                </button>
+                <button class="button4">
+                    <span class="sl_tit">slider4</span>
+                    <span class="sl_progress"></span>
+                </button>
+            </div>
+        </div>
+    </figure>
+    <header class="mo mo_hd">
+        <div class="mo_hd_btn_box">
+            <button class="mo_sc_btn">
+                <i class="fas fa-search" style="font-size: 22px;"></i>
+            </button>
+            <button class="mo_gnb_btn">
+                <i class="fas fa-bars" style="font-size: 22px;"></i>
+            </button>
+        </div>
+        <form action="" class="mo_sc_frm">
+            <div class="mo_sc_frm_fr">
+                <h2 class="mo_sc_tit">SEARCH</h2>
+                <input type="text" class="mo_scbar">
+                <input type="submit" value="" class="mo_scbtn">
+                <button class="mo_sc_cls">
+                    <i class="fas fa-times" style="font-size: 30px;"></i>
+                </button>
+            </div>
+        </form>
+        <nav class="mo_gnb">
+            <ul class="menu">
+                <li>
+                    <a href="">국민소통</a>
+                </li>
+                <li>
+                    <a href="">소방소식</a>
+                </li>
+                <li>
+                    <a href="">정책·정보</a>
+                </li>
+                <li>
+                    <a href="">정보공개</a>
+                </li>
+                <li>
+                    <a href="">기관소개</a>
+                </li>
+            </ul>
+            <button class="mo_gnb_cls">
+                <i class="fas fa-times" style="font-size: 30px;"></i>
+            </button>
+        </nav>
+
+    </header>
+
+    <header class="desk hd">
+        <div class="hd_fr">
+            <a href="#" class="logo1"></a>
+            <nav class="gnb">
+                <ul class="menu">
+                    <li>
+                        <a href="">국민소통</a>
+                    </li>
+                    <li>
+                        <a href="">소방소식</a>
+                    </li>
+                    <li>
+                        <a href="">정책·정보</a>
+                    </li>
+                    <li>
+                        <a href="">정보공개</a>
+                    </li>
+                    <li>
+                        <a href="">기관소개</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="sub">
+                <li class="sub1">
+                    <ul class="menu">
+                        <li><a href="">소방안전활동</a></li>
+                        <li><a href="">국민의견</a></li>
+                        <li><a href="">참여민원</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">규제개혁</a></li>
+                        <li><a href="">규제정보</a></li>
+                        <li><a href="">소방민원</a></li>
+                    </ul>
+                </li>
+                <li class="sub2">
+                    <ul class="menu">
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">보도자료</a></li>
+                        <li><a href="">일자리정보</a></li>
+                        <li><a href="">소방뉴스</a></li>
+                        <li><a href="">메일 발송</a></li>
+                        <li><a href="">해외소방정보</a></li>
+                    </ul>
+                </li>
+                <li class="sub3">
+                    <ul class="menu">
+                        <li><a href="">소방안전정책</a></li>
+                        <li><a href="">대국민 구급서비스</a></li>
+                        <li><a href="">주택용 소방시설</a></li>
+                        <li><a href="">재난별 안전정보</a></li>
+                        <li><a href="">소방산업육성</a></li>
+                        <li><a href="">법령정보</a></li>
+                        <li><a href="">정책자료실</a></li>
+                    </ul>
+                </li>
+                <li class="sub4">
+                    <ul class="menu">
+                        <li><a href="">사전정보공개</a></li>
+                        <li><a href="">재정정보공개</a></li>
+                        <li><a href="">업무추진비</a></li>
+                        <li><a href="">소방장비 정보</a></li>
+                        <li><a href="">공공데이터</a></li>
+                        <li><a href="">정보공개안내</a></li>
+                        <li><a href="">정보공개청구</a></li>
+                        <li><a href="">통계정보</a></li>
+                    </ul>
+                </li>
+                <li class="sub5">
+                    <ul class="menu">
+                        <li><a href="">청장소개</a></li>
+                        <li><a href="">일반현황</a></li>
+                        <li><a href="">상징소개</a></li>
+                        <li><a href="">조직안내</a></li>
+                        <li><a href="">오시는 길</a></li>
+                        <li><a href="">계급·제복안내</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="" class="hd_banner"></a>
+            <form action="" class="hd_frm">
+                <select name="lang" class="lang">
+                    <option value="index.html">KOREAN</option>
+                    <option value="index_en">ENGLISH</option>
+                    <option value="index_cn">CHINESE</option>
+                    <option value="index_jp">JAPENESE</option>
+                </select>
+                <div class="hd_sc">
+                    <input type="text" class="hd_scbar">
+                    <input type="submit" value="" class="hd_scbtn">
+                </div>
+            </form>
+        </div>
+    </header>
+    <main class="ct">
+        <section class="sec sec1">
+            <div class="sec_fr">
+                <div class="notice">
+                    <h3 class="sec1_box_tit">공지사항</h3>
+                    <a href="" class="sec1_more">
+                        <i class="far fa-plus-square" style="font-size: 30px;"></i>
+                    </a>
+                    <table class="sec1_tb">
+                        <tbody>
+                            <tr>
+                                <td class="sec1_tb_tit"><a href="">부패방지 시책평가 결과 공개</a></td>
+                                <td class="sec1_tb_date">2020-01-30</td>
+                            </tr>
+                            <tr>
+                                <td class="sec1_tb_tit"><a href="">소방현장 연구과제 및 객원연구자 공모</a></td>
+                                <td class="sec1_tb_date">2020-01-21</td>
+                            </tr>
+                            <tr>
+                                <td class="sec1_tb_tit"><a href="">2020년 소방청 소방안전기술개발 R&D 사업설명회 개최</a></td>
+                                <td class="sec1_tb_date">2020-01-09</td>
+                            </tr>
+                            <tr>
+                                <td class="sec1_tb_tit"><a href="">2020년 정부시상 수요조사 결과 의견수렴</a></td>
+                                <td class="sec1_tb_date">2020-01-03</td>
+                            </tr>
+                            <tr>
+                                <td class="sec1_tb_tit"><a href="">[공고] 소방장비 인증기관 지정 공고</a></td>
+                                <td class="sec1_tb_date">2019-12-30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="disaster">
+                    <h3 class="sec1_box_tit">재난뉴스</h3>
+                    <a href="" class="sec1_more">
+                        <i class="far fa-plus-square" style="font-size: 30px;"></i>
+                    </a>
+                    <table class="sec1_tb">
+                        <tbody>
+                            <tr>
+                                <td class="sec1_tb_tit"><a href="">올해 재해예방사업비 1조원. "침수·붕괴위험지 정비 조기추진"</a></td>
+                                <td class="sec1_tb_date">2020-02-05</td>
+                            </tr>
+                            <tr>
+                                <td class="sec1_tb_tit"><a href="">현대제철 포항공장서 작업 중 직원 화상</a></td>
+                                <td class="sec1_tb_date">2020-02-05</td>
+                            </tr>
+                            <tr>
+                                <td class="sec1_tb_tit"><a href="">뉴질랜드 남섬에 큰 홍수. 관광객 수백명 며칠째 고립
+                                </a></td>
+                                <td class="sec1_tb_date">2020-02-05</td>
+                            </tr>
+                            <tr>
+                                <td class="sec1_tb_tit"><a href="">환경단체 "후쿠시마 경고 잊었나. 원자력 진흥법 폐기해야"
+                                </a></td>
+                                <td class="sec1_tb_date">2020-02-05</td>
+                            </tr>
+                            <tr>
+                                <td class="sec1_tb_tit"><a href="">[게시판] 수소경제홍보TF, 여수 수소충전소 설명회
+                                </a></td>
+                                <td class="sec1_tb_date">2020-02-05</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="board">
+                    <h3 class="sec1_box_tit">알림판</h3>
+                    <!-- 컨텐츠 채울 것 찾기! -->
+                    <!-- 컨텐츠 채울 것 찾기! -->
+                    <!-- 컨텐츠 채울 것 찾기! -->
+                    <!-- 컨텐츠 채울 것 찾기! -->
+                    <!-- 컨텐츠 채울 것 찾기! -->
+                </div>
+            </div>
+        </section>
+        <section class="sec sec2">
+            <div class="sec_fr">
+                <h3 class="sec2_tit">바로가기</h3>
+                <div class="sec2_quick_box">
+                    <a href="" class="quick1">
+                        <span class="quick_icon"></span>
+                        <span class="quick_tit">일일활동상황</span>
+                    </a>
+                    <a href="" class="quick2">
+                        <span class="quick_icon"></span>
+                        <span class="quick_tit">소방장비정보</span>
+                    </a>
+                    <a href="" class="quick3">
+                        <span class="quick_icon"></span>
+                        <span class="quick_tit">소관법령</span>
+                    </a>
+                    <a href="" class="quick4">
+                        <span class="quick_icon"></span>
+                        <span class="quick_tit">질의 및 민원</span>
+                    </a>
+                    <a href="" class="quick5">
+                        <span class="quick_icon"></span>
+                        <span class="quick_tit">통계</span>
+                    </a>
+                    <a href="" class="quick6">
+                        <span class="quick_icon"></span>
+                        <span class="quick_tit">의견 및 칭찬</span>
+                    </a>
+                    <a href="" class="quick7">
+                        <span class="quick_icon"></span>
+                        <span class="quick_tit">청장동정</span>
+                    </a>
+                    <a href="" class="quick8">
+                        <span class="quick_icon"></span>
+                        <span class="quick_tit">전국소방기관</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="sec sec3">
+            <div class="sec_fr">
+                <figure class="vs2">
+                    <ul class="slider2">
+                        <li class="item1"></li>
+                        <li class="item2"></li>
+                        <li class="item3"></li>
+                    </ul>
+                    <div class="slider2_txt_box">
+                        <h3 class="slider2_tit">숭고한 희생, 잊지 않겠습니다.</h3>
+                        <p class="slider2_com">
+                            "생에 마지막 순간까지의 희생과 노고에<br> 
+                            깊은 감사를 드립니다.<br>
+                            부디 천국에서 편희 쉬시기를 기도합니다."<br>
+                        </p>
+                        <a href="" class="go_rip">순직소방관 추모관 방문하기</a>
+                    </div>
+                    <div class="sec3_button_box">
+                        <button class="sec3_prev_btn">
+                            <i class="fas fa-chevron-left" style="font-size: 48px;"></i>
+                        </button>
+                        <button class="sec3_next_btn">
+                            <i class="fas fa-chevron-right" style="font-size: 48px;"></i>
+                        </button>
+                    </div>
+                </figure>
+            </div>
+        </section>
+        <section class="sec sec4">
+            <div class="sec_fr">
+                <div class="news">
+                    <h3 class="sec4_box_tit">보도자료</h3>
+                    <a href="" class="sec4_more">
+                        <i class="far fa-plus-square" style="font-size: 30px;"></i>
+                    </a>
+                    <table class="sec4_tb">
+                        <tbody>
+                            <tr>
+                                <td class="sec4_tb_tit"><a href="">작년 10월에서 12월 사이 멧돼지 포획 출동 3배이상 증가</a></td>
+                                <td class="sec4_tb_date">2020-01-31</td>
+                            </tr>
+                            <tr>
+                                <td class="sec4_tb_tit"><a href="">2019년 화재사망자 중 65세이상 노인층이 가장 많아</a></td>
+                                <td class="sec4_tb_date">2020-01-30</td>
+                            </tr>
+                            <tr>
+                                <td class="sec4_tb_tit"><a href="">위험물 운송차량 불시단속 실시 결과
+                                </a></td>
+                                <td class="sec4_tb_date">2020-01-29</td>
+                            </tr>
+                            <tr>
+                                <td class="sec4_tb_tit"><a href="">방탈출카페, 스크린체육시설 다중이용업소 지정 등 안전관리 강화
+                                </a></td>
+                                <td class="sec4_tb_date">2020-01-29</td>
+                            </tr>
+                            <tr>
+                                <td class="sec4_tb_tit"><a href="">이번 설 명절에는 화재경보기를 선물하세요
+                                </a></td>
+                                <td class="sec4_tb_date">2020-01-23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="job">
+                    <h3 class="sec4_box_tit">채용정보</h3>
+                    <a href="" class="sec4_more">
+                        <i class="far fa-plus-square" style="font-size: 30px;"></i>
+                    </a>
+                    <table class="sec4_tb">
+                        <tbody>
+                            <tr>
+                                <td class="sec4_tb_tit"><a href="">2020년도 소방청 경력경쟁채용 통합 안내</a></td>
+                                <td class="sec4_tb_date">2020-01-23</td>
+                            </tr>
+                            <tr>
+                                <td class="sec4_tb_tit"><a href="">국립소방연구원 공무직(연구원) 채용시험 최종합격자 공고</a></td>
+                                <td class="sec4_tb_date">2020-01-15</td>
+                            </tr>
+                            <tr>
+                                <td class="sec4_tb_tit"><a href="">2019년 국립소방연구원 공무직(연구원) 채용시험 서류전형 합격자 발표 및 인성검사 일정 등 공고</a></td>
+                                <td class="sec4_tb_date">2019-12-09</td>
+                            </tr>
+                            <tr>
+                                <td class="sec4_tb_tit"><a href="">2019년 국립소방연구원 공무직(연구원) 채용 공고</a></td>
+                                <td class="sec4_tb_date">2019-11-25</td>
+                            </tr>
+                            <tr>
+                                <td class="sec4_tb_tit"><a href="">	소방산업공제조합 비상임이사 모집 공고</a></td>
+                                <td class="sec4_tb_date">2019-11-18</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="sec sec5">
+            소중한 생명을 지키는 안전상식, 재난예방대비 국민행동요령, 주택용 소방시설 의무설치
+            탭형식으로 할 생각
+        </section>
+        <footer class="ft">
+
+        </footer>
+
+
+
+        <div class="_blank"></div>
+
+
+
+
+        
+    </main>
+    
+</body>
+</html>
