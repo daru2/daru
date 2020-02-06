@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
         /* 1page scroll */
-
+    if(parseInt($(window).width()) <= 1280 ){
         $(".page").each(function (index) {
             // 개별적으로 Wheel 이벤트 적용
             $(this).on("mousewheel DOMMouseScroll", function (e) {
@@ -41,7 +41,7 @@ $(document).ready(function(){
                 });
             });
         });
-    
+    }
         /* /1page scroll */
 
         /* cnt 설정 */

@@ -1,7 +1,7 @@
 @charset "utf-8";
 .page { width: 100vw; height: 100vh; position: relative;}
 
-.main_tit { position: absolute; width: 400px; height: 100px; top: 40vh; left: 50vw; transform: translate(-50%, -50%); background-image:url(../src/logo_white.png); z-index: 1;}
+.main_tit { position: absolute; width: 400px; height: 100px; top: 40vh; left: 50vw; transform: translate(-50%, -50%); background-image:url(../src/logo_white.png); background-position: center; background-size: cover; background-repeat: no-repeat; z-index: 1;}
 
 #vs { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; overflow: hidden;}
 #vdo { height: 200%;}

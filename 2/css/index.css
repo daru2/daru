@@ -23,16 +23,7 @@
 #ct .page_img { width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover;}
 #ct .page_tit { text-align: center; font-size: 100px;}
 #ct .page_com { text-align: center; font-size: 1em; }
-#ct .page_more_btn { display: block; position: absolute; width: 20%; height: 50px; bottom: 10%; border-radius: 20px; box-shadow: 0px 0px 6px #333; color: white; font-size: 20px; font-weight: bold; background-image: linear-gradient(to right, #003e7d, #0a9ba5); cursor: pointer; }
-
-/* 안되고 있는 것 */
-#ct .page_more_btn:hover { animation: moreBtnAni 2s infinite; }
-
-@keyframes moreBtnAni {
-    0% { background-image: linear-gradient(to right, #003e7d, #0a9ba5); }
-    50% { background-image: linear-gradient(to right, #0a9ba5, #003e7d); }
-    100% { background-image: linear-gradient(to right, #003e7d, #0a9ba5); }
-}
+#ct .page_more_btn { display: block; position: absolute; width: 20%; height: 50px; bottom: 10%; border-radius: 20px; box-shadow: 0px 0px 6px #333; color: white; font-size: 20px; text-align: center; font-weight: bold; background-image: linear-gradient(to right, #003e7d, #0a9ba5); cursor: pointer; }
 
 
 
@@ -131,7 +122,7 @@
     #ct .page .page_com { font-size: 1.4em;}
     #ct .page3 .left_box { order: 1;}
     #ct .page3 .right_box { order: 2;}
-    #ct .page_more_btn { font-size: 20px;}
+    #ct .page_more_btn { padding: 0; font-size: 18px;}
     
     #ct .page.page5 { height: 200vh;}
     #ct .page5 .news_fr { height: auto;}
