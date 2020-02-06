@@ -54,11 +54,8 @@
     <!-- 구글폰트 : https://fonts.google.com/?subset=korean&selection.family=Noto+Sans+KR -->
     <!-- 눈누 : https://noonnu.cc/-->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet"> <!-- font-family: 'Noto Sans KR', sans-serif; -->
-
-    <!-- XE icon cdn -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    <!-- 아이콘셋 : https://xpressengine.github.io/XEIcon/library-2.3.3.html -->
-    <!-- 형식 : <span class="xi-bars"></span>-->
+    <!-- 폰트어썸 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 
     <style>
 
@@ -72,6 +69,9 @@
     </script>
 </head>
 <body>
+<figure id="vs">
+    <video src="./src/index/back_video.mp4" id="vdo" autoplay muted loop></video>
+</figure>
 <div class="wrap">
     <button id="menu_btn">
         <div class="relative">
@@ -122,9 +122,6 @@
     <main id="ct">
         <div class="page" id="page1">
             <div class="main_tit"></div>
-            <figure id="vs">
-                <video src="./src/index/back_video.mp4" id="vdo" autoplay muted loop></video>
-            </figure>
             <form action="" id="src_form">
                 <div class="relative">
                     <input type="text" name="search" id="src_bar">
@@ -209,7 +206,27 @@
         </div>
     </main>
     <footer id="ft">
-        
+        <div class="contact_box">
+            <button class="navi">
+                <i class="fas fa-map-marker-alt" style="font-size: 48px;"></i>
+                <span> 안내소 위치 </span>
+            </button>
+            <button class="tel">
+                <i class="fas fa-phone" style="font-size: 48px;"></i>
+                <span> 연락처 </span>
+            </button>
+        </div>
+        <nav id="fnb">
+            <ul class="menu">
+                <li><a href="">이용안내</a></li>
+                <li><a href="">개인정보</a></li>
+                <li><a href="">전화번호</a></li>
+                <li><a href="">오시는길</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            Copyright(c) 2010 JONGNO-Gu Office. Some Rights Reserved.
+        </div>
     </footer>
 </div>
 

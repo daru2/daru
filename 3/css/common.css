@@ -63,6 +63,8 @@ input, button, img { border: 0; outline: 0; background-color: transparent;}
 #hd2.mo #menu_frm_mo .menu_frm_cls_mo { position: absolute; display: block; top: 10vw; right: 10vw; cursor: pointer;}
 #hd2.mo #menu_frm_mo .menu_frm_cls_mo span { font-size: 2em; color: #333; font-weight: bold;}
 
+#ft { position: absolute; width: 100vw; height: 10vh; bottom: 0; left: 0; background-color: #203c54;}
+
 @media screen and ( max-width: 700px ){
     .desk { display: none;}
     html, body { font-size: 10px; }

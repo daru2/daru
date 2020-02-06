@@ -3,8 +3,8 @@
 /* RESET */
 * { padding: 0; margin: 0;}
 html, body { width: 100%; height: 100%; -ms-overflow-style: hidden; font-size: 14px; font-family: 'Noto Sans KR', sans-serif;}
-html { overflow: hidden;}
-body { overflow: auto;}
+/* html { overflow: hidden;}
+body { overflow: auto;} */
 ::-webkit-scrollbar { display: none;} ::-moz-scrollbar { display: none;} ::-o-scrollbar { display: none;} ::-ms-scrollbar { display: none; }
 ul { list-style: none;}
 a { text-decoration: none; font-size: 1rem;}
@@ -36,7 +36,7 @@ input[type=checkbox], input[type=radio] { display: none; }
 /* 숨겨진 menu_box */
 #menu_box { position: fixed; display: flex; width: 24vw; height: 100vh; top: 0; left: -60vw; flex-flow: column; align-items: center; background-color: white; border-radius: 0 10% 50% 0; z-index: 100;}
 #gnb { width: 100%; padding: 20vh 10vw;}
-#gnb li a { display: block; text-align: center; font-size: 2.4rem; line-height: 5rem; color: #333; font-weight: bold; transition: 0.6s;}
+#gnb li a { display: block; text-align: center; font-size: 2.4rem; line-height: 5rem; color: #333; font-weight: bold; }
 #gnb li a:hover { color: #6C0D0F;}
 
 #bnb { width: 50%;}
@@ -69,3 +69,22 @@ input[type=checkbox], input[type=radio] { display: none; }
 #right_menu a { float: left; line-height: 34px;}
 
 /* footer */
+
+#ft { position: absolute; width: 1440px; height: 30vh; bottom: 0; left: 50%; transform: translate(-50%, 0); background-color: #290E14;}
+.contact_box { width: 100%; height: 60%;}
+.contact_box button { float: left; display: flex; justify-content: center; align-items: center; width: 50%; height: 100%; font-size: 2rem; font-weight: bold; cursor: pointer; transition: 0.4s;}
+.contact_box .navi { background-color: white;}
+.contact_box .tel { background-color: #f1f1f1;}
+.contact_box i { color: #6C0D0F; transition: 0.4s;}
+.contact_box span { display: block; padding-left: 2rem;}
+.contact_box button:hover { background-color: #290E14; color: white;}
+.contact_box button:hover i { color: white;}
+#fnb { float: left; width: 60%; height: 40%;}
+#fnb ul { width: 100%; height: 100%; display: flex; align-items: center;}
+#fnb a { color: white; font-weight: bold; padding-left: 1rem; padding-right: 1rem;}
+#fnb li:after { content: "|"; color: white;}
+#fnb li:last-child::after { content:"";}
+#fnb li:first-child a { padding-left: 3rem;}
+.copyright { float: left; width: 40%; height: 40%; display: flex; justify-content: center; align-items: center; color: white;}
+
+#fnb a:hover { color: #E5DFEB;}
